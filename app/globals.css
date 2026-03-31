@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2A29FF;
+  --color-blue: #29FFFF;
+  --color-black: #171717;
+  --color-main-black: #232323;
+  --color-white: #FFFFFF;
+  --color-gray: #F6F6F6;
+  --color-border: #E9E9E9;
+  --color-border-light: #EAEAEA;
+  --color-green: #9EF34A;
+
+  --font-base: 'Manrope', sans-serif;
+
+  --shadow-card: 0px 7px 26.5px 0px rgba(0,0,0,0.03);
+  --shadow-card-hover: 0px 9px 13px 0px rgba(0,0,0,0.14);
+  --shadow-icon: 0px 6px 12px 0px rgba(0,0,0,0.15);
+  --shadow-pill: 0px 1px 6px 0px rgba(0,0,0,0.09);
+}
+
+@theme inline {
+  --color-primary: #2A29FF;
+  --color-blue-accent: #29FFFF;
+  --color-black-base: #171717;
+  --color-main-black: #232323;
+  --color-gray-light: #F6F6F6;
+  --color-border: #E9E9E9;
+  --color-green-accent: #9EF34A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: #171717;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+/* Logo marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply animation */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Pause on hover */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
