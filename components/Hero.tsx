@@ -27,12 +27,7 @@ export default function Hero() {
         {/* Outer gray card */}
         <div className="bg-[#EEF2F8] border border-[#EAEAEA] rounded-[46px] pt-[50px] pb-[20px]  px-[9px] relative overflow-hidden">
           {/* Inner white card */}
-          <div class="bg-white rounded-[24px] sm:rounded-[36px] 
-shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] 
-px-4 sm:px-6 md:px-8 lg:px-[50px] 
-pt-6 sm:pt-8 md:pt-10 
-pb-6 sm:pb-8 md:pb-10 
-relative">
+         <div className="bg-white rounded-[24px] sm:rounded-[36px] shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] px-4 sm:px-6 md:px-8 lg:px-[50px] pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10 relative">
             {/* Slots bar */}
         
 
