@@ -41,7 +41,11 @@ export default function Works() {
   return (
     <section className="w-full flex flex-col items-center py-16">
       <div className="flex flex-col items-center gap-6 text-center mb-12">
-        <h2 className="text-[#012970] text-[50px] font-semibold tracking-[-2.5px] leading-none">
+       <h2 className="text-[#012970] 
+text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] 
+font-semibold 
+tracking-[-0.8px] sm:tracking-[-1.4px] md:tracking-[-2px] lg:tracking-[-2.5px] 
+leading-[1.1]">
           Selected Works
         </h2>
         <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[247px]">

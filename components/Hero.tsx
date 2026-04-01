@@ -13,7 +13,7 @@ const imgEllipse = "http://localhost:3845/assets/3e4121aa84a20c848e78a8b93b3bb4b
 export default function Hero() {
   return (
     <section className="relative w-full flex justify-center pt-0 pb-10">
-      <div className="relative w-[550px]">
+      <div className="relative w-full w-[550px]">
         {/* Decorative stripe at top */}
         <div className="flex flex-col items-center mb-[-36px]">
           <div className="flex flex-col items-center z-20">
@@ -51,14 +51,18 @@ export default function Hero() {
             </div>
 
             {/* Main headline */}
-            <h1 className="text-[#012970] text-[66px] font-bold tracking-[-3.6px] leading-[0.9] mb-8">
-              I’m crafting meaningful digital experiences.
+            <h1 className="text-[#012970] 
+text-[32px] sm:text-[42px] md:text-[52px] lg:text-[60px] 
+font-bold 
+tracking-tight sm:tracking-[-0.02em] md:tracking-[-0.03em] lg:tracking-[-0.04em] 
+leading-[1.05] mb-8">
+              I’m Crafting Meaningful Digital Experiences.
             </h1>
 
             {/* Rating badge + subtext */}
             <div className="flex flex-col gap-[22px] mb-8">
         
-              <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] max-w-[283px]">
+              <p className="text-[#072447] text-[16px] font-semibold tracking-[-0.68px] leading-[1.4] max-w-[283px]">
                I simplify complex problems into intuitive experiences across web and mobile.
               </p>
             </div>

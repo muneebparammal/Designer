@@ -109,7 +109,7 @@ export default function Process() {
                   </div>
 
                   <div className="flex min-w-0 flex-1 flex-col gap-2">
-                    <p className="text-[28px] font-semibold leading-[1] tracking-[-1px] text-[#171717]">
+                    <p className="text-[20px] lg:text-[28px] font-semibold leading-[1] tracking-[-1px] text-[#171717]">
                       {step.title}
                     </p>
                     <p className="text-[15px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#171717]/60">

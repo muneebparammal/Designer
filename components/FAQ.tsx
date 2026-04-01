@@ -35,7 +35,11 @@ export default function FAQ() {
     <section className="w-full flex justify-center py-10">
       <div className="w-[550px] flex flex-col gap-8">
         {/* Heading */}
-        <h2 className="text-[#171717] text-[50px] font-semibold tracking-[-2.5px] leading-none text-center">
+        <h2 className="text-[#012970] 
+text-[36px] md:text-[44px] lg:text-[50px] 
+font-semibold 
+tracking-[-0.8px] sm:tracking-[-1.4px] md:tracking-[-2px] lg:tracking-[-2.5px] 
+leading-[1.1] text-center">
           FAQ
         </h2>
 

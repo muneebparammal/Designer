@@ -47,7 +47,11 @@ export default function Services() {
     <section className="w-full flex justify-center py-10">
       <div className="w-[550px] flex flex-col gap-10">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="text-[#012970] text-[50px] font-semibold tracking-[-2.5px] leading-none">
+          <h2 className="text-[#012970] 
+text-[36px] md:text-[44px] lg:text-[50px] 
+font-semibold 
+tracking-[-0.8px] sm:tracking-[-1.4px] md:tracking-[-2px] lg:tracking-[-2.5px] 
+leading-[1.1]">
             My services
           </h2>
           <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[220px]">
