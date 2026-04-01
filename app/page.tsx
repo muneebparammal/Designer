@@ -26,7 +26,7 @@ export default function Home() {
         {/* <Tools /> */}
         {/* <Timeline /> */}
         <Advantages />
-        <Testimonials />
+        {/* <Testimonials /> */}
         {/* <Pricing /> */}
         <FAQ />
         {/* <Banner /> */}

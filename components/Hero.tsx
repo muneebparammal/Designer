@@ -27,7 +27,12 @@ export default function Hero() {
         {/* Outer gray card */}
         <div className="bg-[#EEF2F8] border border-[#EAEAEA] rounded-[46px] pt-[50px] pb-[20px]  px-[9px] relative overflow-hidden">
           {/* Inner white card */}
-          <div className="bg-white rounded-[36px] shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] px-[50px] pt-10 pb-10 relative">
+          <div class="bg-white rounded-[24px] sm:rounded-[36px] 
+shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] 
+px-4 sm:px-6 md:px-8 lg:px-[50px] 
+pt-6 sm:pt-8 md:pt-10 
+pb-6 sm:pb-8 md:pb-10 
+relative">
             {/* Slots bar */}
         
 
@@ -70,11 +75,11 @@ leading-[1.05] mb-8">
             {/* CTA Buttons */}
             <div className="flex gap-[8px] items-center mb-4">
               <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
-                <span className="text-white text-[17px] font-semibold tracking-[-0.68px]">Say Hello</span>
+                <span className="text-white text-[14px] lg:text-[16px] font-semibold tracking-[-0.68px]">Say Hello</span>
                 <img src="/arrow.svg" alt="" className="w-[52px] h-[52px]" />
               </button>
               <button className="bg-[#EEF2F8] h-[58px] px-[28px] py-[0px] rounded-[100px] hover:bg-[#EDEDED] transition-colors">
-                <span className="text-[#012970] text-[17px] font-semibold tracking-[-0.68px]">My work</span>
+                <span className="text-[#012970] text-[14px] lg:text-[16px] font-semibold tracking-[-0.68px]">My work</span>
               </button>
             </div>
           </div>
