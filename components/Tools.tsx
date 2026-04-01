@@ -27,10 +27,10 @@ export default function Tools() {
           {tools.map((tool, i) => (
             <div key={i} className="relative w-[550px] h-[80px] rounded-[18px] overflow-hidden border border-[#E9E9E9]">
               {/* Background */}
-              <div className="absolute inset-0 bg-[#F6F6F6]" />
+              <div className="absolute inset-0 bg-[#EEF2F8]" />
               {/* Fill */}
               <div
-                className="absolute top-0 left-0 bottom-0 bg-[#2A29FF] rounded-l-[18px]"
+                className="absolute top-0 left-0 bottom-0 bg-[#012970] rounded-l-[18px]"
                 style={{ width: `${tool.fillWidth}px` }}
               />
               {/* Content */}

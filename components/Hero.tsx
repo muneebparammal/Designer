@@ -17,22 +17,22 @@ export default function Hero() {
         {/* Decorative stripe at top */}
         <div className="flex flex-col items-center mb-[-36px]">
           <div className="flex flex-col items-center z-20">
-            <div className="bg-[#2A29FF] h-[50px] w-[53px] rounded-tl-[0px] rounded-tr-[0px]" />
-            <div className="bg-[#171717] h-[36px] rounded-[6px] w-[63px]" />
+            <div className="bg-[#012970] h-[50px] w-[53px] rounded-tl-[0px] rounded-tr-[0px]" />
+            <div className="bg-[#6C6C6C] h-[36px] rounded-[6px] w-[63px]" />
             <div className="bg-gradient-to-b from-[#080808] to-[#2e2e2e] h-[26px] rounded-bl-[4px] rounded-br-[4px] w-[31px]" />
             <div className="bg-white border border-[#eaeaea] h-[19px] w-[63px] rounded-[46px] mt-[-3px]" />
           </div>
         </div>
 
         {/* Outer gray card */}
-        <div className="bg-[#F6F6F6] border border-[#EAEAEA] rounded-[46px] pt-[50px] pb-[20px]  px-[9px] relative overflow-hidden">
+        <div className="bg-[#EEF2F8] border border-[#EAEAEA] rounded-[46px] pt-[50px] pb-[20px]  px-[9px] relative overflow-hidden">
           {/* Inner white card */}
           <div className="bg-white rounded-[36px] shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] px-[50px] pt-10 pb-10 relative">
             {/* Slots bar */}
         
 
             {/* Avatar row */}
-            <div className="flex items-start justify-between mb-6">
+            <div className="flex items-start justify-between mb-8">
               <div className="flex gap-[18px] items-center">
                 <div className="w-[60px] h-[60px] rounded-[100px] overflow-hidden flex-shrink-0">
                   <img src="/profile.jpg" alt="Andrew Parker" className="w-full h-full object-cover" />
@@ -40,8 +40,8 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col gap-[12px]">
                   <div className="flex flex-col gap-[6px]">
-                    <p className="text-[#171717] text-[20px] font-semibold tracking-[-0.6px] leading-[20px]">Andrew Parker</p>
-                    <p className="text-[#171717] opacity-60 text-[14px] font-semibold tracking-[-0.42px] leading-[20px]">Web-designer, developer</p>
+                    <p className="text-[#012970] text-[20px] font-semibold tracking-[-0.6px] leading-[20px]">Muneeb Parammal</p>
+                    <p className="text-[#072447] text-[14px] font-semibold tracking-[-0.42px] leading-[20px]">Sr. UI UX Designer / Product Designer</p>
                   </div>
              
                 </div>
@@ -51,26 +51,26 @@ export default function Hero() {
             </div>
 
             {/* Main headline */}
-            <h1 className="text-[#171717] text-[72px] font-semibold tracking-[-3.6px] leading-[0.9] mb-8">
-              I create websites that work as hard as you do
+            <h1 className="text-[#012970] text-[66px] font-bold tracking-[-3.6px] leading-[0.9] mb-8">
+              I’m crafting meaningful digital experiences.
             </h1>
 
             {/* Rating badge + subtext */}
             <div className="flex flex-col gap-[22px] mb-8">
         
-              <p className="text-[#171717] opacity-60 text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] max-w-[283px]">
-                I build designs that solve problems, inspire action, and drive success.
+              <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] max-w-[283px]">
+               I simplify complex problems into intuitive experiences across web and mobile.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex gap-[8px] items-center mb-4">
-              <button className="bg-[#2A29FF] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
-                <span className="text-white text-[17px] font-semibold tracking-[-0.68px]">Get started</span>
+              <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
+                <span className="text-white text-[17px] font-semibold tracking-[-0.68px]">Say Hello</span>
                 <img src="/arrow.svg" alt="" className="w-[52px] h-[52px]" />
               </button>
-              <button className="bg-[#F6F6F6] h-[58px] px-[28px] py-[0px] rounded-[100px] hover:bg-[#EDEDED] transition-colors">
-                <span className="text-[#171717] text-[17px] font-semibold tracking-[-0.68px]">My work</span>
+              <button className="bg-[#EEF2F8] h-[58px] px-[28px] py-[0px] rounded-[100px] hover:bg-[#EDEDED] transition-colors">
+                <span className="text-[#012970] text-[17px] font-semibold tracking-[-0.68px]">My work</span>
               </button>
             </div>
           </div>
@@ -80,9 +80,9 @@ export default function Hero() {
             <div className="flex items-center gap-[5px]">
               <img src="/map.svg" alt="" className="w-[13px] h-[13px]" />
               <p className="text-[13px] font-semibold tracking-[-0.65px] leading-[1.2]">
-                <span className="text-[rgba(23,23,23,0.6)]">Located in </span>
-                <span className="text-[#171717]">London</span>
-                <span className="text-[rgba(23,23,23,0.6)]">, available worldwide.</span>
+                <span className="text-[rgba(23,23,23,0.6)]">Based in </span>
+                <span className="text-[#171717]">Dubai</span>
+                <span className="text-[rgba(23,23,23,0.6)]">, United Arab Emirates</span>
               </p>
             </div>
 

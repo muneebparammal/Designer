@@ -61,7 +61,7 @@ export default function Timeline() {
         </div>
 
         {/* CTA button */}
-        <button className="bg-[#2A29FF] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity self-start mt-2">
+        <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity self-start mt-2">
           <span className="text-white text-[18px] font-semibold tracking-[-0.72px] leading-none">Contact me</span>
           <img src={imgGroup8} alt="" className="w-[52px] h-[52px]" />
         </button>

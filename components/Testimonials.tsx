@@ -75,9 +75,9 @@ export default function Testimonials() {
       <div className="w-full max-w-[550px] flex flex-col gap-10">
         <div className="flex flex-col items-center gap-[30px] text-center">
           <h2 className="text-[#171717] text-[36px] md:text-[50px] font-semibold tracking-[-1.8px] md:tracking-[-2.5px] leading-none">
-            Words from
+           From Clients & 
             <br />
-            my clients
+            Collaborators
           </h2>
 
           <div className="flex flex-col items-center gap-5 w-[179px]">
@@ -97,7 +97,7 @@ export default function Testimonials() {
                   </div>
                 ))}
 
-                <div className="z-20 w-[40px] h-[40px] -ml-[17px] rounded-full bg-[#2A29FF] text-white text-[12px] font-semibold flex items-center justify-center border-2 border-white overflow-hidden">
+                <div className="z-20 w-[40px] h-[40px] -ml-[17px] rounded-full bg-[#012970] text-white text-[12px] font-semibold flex items-center justify-center border-2 border-white overflow-hidden">
                   <img
                     src="/star.png"
                     alt="Star"
@@ -127,7 +127,7 @@ export default function Testimonials() {
           />
 
           <div className="absolute left-1/2 top-[20px] z-20 w-[88vw] max-w-[435px] -translate-x-1/2 aspect-[435/860]">
-            <div className="absolute left-[4.1%] top-[2.1%] h-[95.8%] w-[91.7%] overflow-hidden rounded-[12%] bg-[#2A29FF]">
+            <div className="absolute left-[4.1%] top-[2.1%] h-[95.8%] w-[91.7%] overflow-hidden rounded-[12%] bg-[#012970]">
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0)_35%)]" />
               <div className="absolute bottom-0 left-0 right-0 h-[220px] bg-gradient-to-b from-transparent to-[rgba(42,41,255,0.97)]" />
 

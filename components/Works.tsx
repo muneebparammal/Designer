@@ -1,38 +1,38 @@
 "use client";
 
-const imgImage = "/work.png";
-const imgImage1 = "/work.png";
-const imgImage2 = "/work.png";
-const imgImage3 = "/work.png";
+const imgImage = "works/sobha.png";
+const imgImage1 = "works/almersad.png";
+const imgImage2 = "works/kula.png";
+const imgImage3 = "works/ADAC.png";
 const imgLink = "/arrow_2.svg";
-const imgFrameIcon = "/sm_logo.png";
-const imgLogo1 = "/sm_logo.png";
-const imgLogo2 = "/sm_logo.png";
-const imgLogo3 = "/sm_logo.png";
+const imgFrameIcon = "works/sobha-sm.svg";
+const imgLogo1 = "works/almersad-sm.svg";
+const imgLogo2 = "works/kula-sm.svg";
+const imgLogo3 = "works/ADAC-sm.svg";
 
 const projects = [
   {
     image: imgImage,
-    name: "Neuron AI",
-    desc: "Full brand identity and modern website",
+    name: "One Sobha App",
+    desc: "Community management mobile app",
     logoType: "icon",
   },
   {
     image: imgImage1,
-    name: "Captured",
+    name: "AI powered  audit management system",
     desc: "An all-in-one, easy-to-edit template for photographers",
     logo: imgLogo1,
   },
   {
     image: imgImage2,
-    name: "LYNIQ",
-    desc: "Website template for design agencies",
+    name: "KULA",
+    desc: "Real estate Community & living management product",
     logo: imgLogo2,
   },
   {
     image: imgImage3,
-    name: "Webstack",
-    desc: "An all-in-one, easy-to-edit solution for creatives.",
+    name: "Abu Dhabi Airport",
+    desc: "Airport management platform ",
     logo: imgLogo3,
   },
 ];
@@ -41,11 +41,11 @@ export default function Works() {
   return (
     <section className="w-full flex flex-col items-center py-16">
       <div className="flex flex-col items-center gap-6 text-center mb-12">
-        <h2 className="text-[#171717] text-[50px] font-semibold tracking-[-2.5px] leading-none">
-          My work
+        <h2 className="text-[#012970] text-[50px] font-semibold tracking-[-2.5px] leading-none">
+          Selected Works
         </h2>
-        <p className="text-[#171717] opacity-50 text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[247px]">
-          Check out some of my favorite & most recent projects.
+        <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[247px]">
+         Check out some of my favorite & most recent projects.
         </p>
       </div>
 

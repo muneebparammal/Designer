@@ -72,7 +72,7 @@ export default function Pricing() {
 
         {/* Tabs */}
         <div className="flex justify-center">
-          <div className="bg-[#F6F6F6] border border-[#E9E9E9] rounded-[50px] p-[4px] flex items-center gap-[28px] pr-[25px]">
+          <div className="bg-[#EEF2F8] border border-[#E9E9E9] rounded-[50px] p-[4px] flex items-center gap-[28px] pr-[25px]">
             {(Object.keys(plans) as PlanKey[]).map((key) => (
               <button
                 key={key}
@@ -90,7 +90,7 @@ export default function Pricing() {
         </div>
 
         {/* Plan card */}
-        <div className="bg-[#F6F6F6] border border-[#E9E9E9] rounded-[46px] p-[9px]">
+        <div className="bg-[#EEF2F8] border border-[#E9E9E9] rounded-[46px] p-[9px]">
           <div className="bg-white rounded-[41px] p-[50px] flex flex-col gap-6">
             {/* Plan number + done in */}
             <div className="flex items-start justify-between">
@@ -122,7 +122,7 @@ export default function Pricing() {
             </p>
 
             {/* CTA */}
-            <button className="bg-[#2A29FF] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity self-start">
+            <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity self-start">
               <span className="text-white text-[18px] font-semibold tracking-[-0.72px] leading-none">Get Started</span>
               <img src={imgGroup8} alt="" className="w-[52px] h-[52px]" />
             </button>

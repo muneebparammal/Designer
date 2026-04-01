@@ -7,23 +7,23 @@ const imgArrow = "/arrow.svg";
 const steps = [
   {
     num: "01",
-    title: "Discovery call",
-    desc: "We'll discuss your goals and vision",
+    title: "Understand",
+    desc: "Define the problem, users, and context clearly.",
   },
   {
     num: "02",
-    title: "Custom design",
-    desc: "I'll create a custom design tailored to your needs",
+    title: "Explore",
+    desc: "Generate ideas, map flows, and test early concepts.",
   },
   {
     num: "03",
-    title: "Development",
-    desc: "The design comes to life with clean, efficient code",
+    title: "Design",
+    desc: "Refine solutions into clear, scalable interfaces.",
   },
   {
     num: "04",
-    title: "Launch",
-    desc: "I'll help you get your website live and ready for the world",
+    title: "Deliver",
+    desc: "Build, validate, and continuously improve the product.",
   },
 ];
 
@@ -44,14 +44,14 @@ export default function Process() {
   return (
     <section className="w-full py-12 md:py-16">
       <div className="w-full max-w-[550px]">
-        <div className="relative flex flex-col gap-[6px] rounded-[28px] border border-[#E9E9E9] bg-[#F6F6F6] p-[6px] md:rounded-[46px] md:p-[9px]">
+        <div className="relative flex flex-col gap-[6px] rounded-[28px] border border-[#E9E9E9] bg-[#EEF2F8] p-[6px] md:rounded-[46px] md:p-[9px]">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.35 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex min-h-[180px] overflow-hidden rounded-[24px] bg-[#2A29FF] px-5 py-6 md:h-[167px] md:rounded-[40px] md:px-0 md:py-0 md:items-center"
+            className="relative flex min-h-[180px] overflow-hidden rounded-[24px] bg-[#012970] px-5 py-6 md:h-[167px] md:rounded-[40px] md:px-0 md:py-0 md:items-center"
           >
             <div className="relative z-10 flex flex-col gap-4 md:flex-row md:items-center md:gap-[22px] md:pl-[44px] md:pr-4">
               <span className="text-[72px] font-semibold leading-none tracking-[-3px] text-white md:text-[104px] md:tracking-[-6.24px]">
@@ -64,12 +64,12 @@ export default function Process() {
                 </p>
 
                 <p className="text-[15px] font-semibold leading-[1.2] tracking-[-0.4px] md:text-[17px] md:tracking-[-0.56px]">
-                  <span className="text-white">A proven workflow</span>
+                  <span className="text-white">A flexible process</span>
                   <span className="text-white/60">
                     {" "}
-                    that ensures seamless collaboration and{" "}
+                    ocused on clarity, iteration, and building scalable{" "}
                   </span>
-                  <span className="text-white">outstanding results</span>
+                  <span className="text-white">digital products.</span>
                   <span className="text-white/60">.</span>
                 </p>
               </div>
@@ -99,11 +99,11 @@ export default function Process() {
                     <div
                       className={`h-[26px] w-[26px] rounded-full border-[6px] ${
                         i === 0
-                          ? "border-[#2A29FF] bg-[#9EF34A]"
-                          : "border-[#2A29FF] bg-white"
+                          ? "border-[#012970] bg-[#9EF34A]"
+                          : "border-[#012970] bg-white"
                       }`}
                     />
-                    <span className="text-[20px] font-bold leading-none tracking-[-0.8px] text-[#2A29FF]">
+                    <span className="text-[20px] font-bold leading-none tracking-[-0.8px] text-[#012970]">
                       {step.num}
                     </span>
                   </div>
@@ -139,7 +139,7 @@ export default function Process() {
                   <div className="grid min-h-[104px] grid-cols-[1fr_70px_1fr] items-center gap-4">
                     {titleLeft ? (
                       <>
-                        <div className="flex justify-start">
+                        <div className="flex justify-end">
                           <p className="max-w-[160px] text-[22px] font-semibold leading-[1.3] tracking-[-0.88px] text-[#171717]">
                             {step.title}
                           </p>
@@ -177,22 +177,7 @@ export default function Process() {
           </div>
 
           {/* Bottom link */}
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.8 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="group flex cursor-pointer items-center justify-center gap-[9px] py-3"
-          >
-            <span className="text-[14px] font-semibold leading-none tracking-[-0.7px] text-[#171717]">
-              Launch your business
-            </span>
-            <img
-              src={imgArrow}
-              alt=""
-              className="h-[10px] w-[10px] transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </motion.div>
+     
         </div>
       </div>
     </section>
@@ -214,10 +199,10 @@ function CenterTimeline({
         viewport={{ once: true, amount: 0.8 }}
         transition={{ duration: 0.45 }}
         className={`h-[26px] w-[26px] rounded-full border-[6px] ${
-          active ? "border-[#2A29FF] bg-[#9EF34A]" : "border-[#2A29FF] bg-white"
+          active ? "border-[#012970] bg-[#3075CA]" : "border-[#012970] bg-white"
         }`}
       />
-      <span className="text-[20px] font-bold leading-none tracking-[-0.8px] text-[#2A29FF]">
+      <span className="text-[20px] font-bold leading-none tracking-[-0.8px] text-[#012970]">
         {step.num}
       </span>
     </div>

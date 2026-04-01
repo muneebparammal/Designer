@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
 
-const imgPlus = "http://localhost:3845/assets/4d551ce9685502e42861ad1efeeb20e1c943372e.svg";
-const imgMinus = "http://localhost:3845/assets/dfba4f5b7d06f64ce809955c348d95cf1f86d193.svg";
-const imgArrow = "http://localhost:3845/assets/1cb976ea746d17f8fefb41cf545f26bc3da9d042.svg";
+const imgPlus = "./plus-sm.svg";
+const imgMinus = "./minus-sm.svg";
+const imgArrow = "./arrow-diaganol.svg";
 
 const faqs = [
   {

@@ -47,10 +47,10 @@ export default function Services() {
     <section className="w-full flex justify-center py-10">
       <div className="w-[550px] flex flex-col gap-10">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="text-[#171717] text-[50px] font-semibold tracking-[-2.5px] leading-none">
+          <h2 className="text-[#012970] text-[50px] font-semibold tracking-[-2.5px] leading-none">
             My services
           </h2>
-          <p className="text-[#171717]/50 text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[220px]">
+          <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[220px]">
             Here&apos;s how I can help bring your vision to life:
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function Services() {
 
             return (
               <div key={i} className="flex flex-col">
-                <div className="w-full h-px bg-[#E9E9E9]" />
+                <div className="w-full h-px bg-[#012970]" />
 
                 <button
                   type="button"
@@ -74,7 +74,7 @@ export default function Services() {
                       alt={svc.name}
                       className="w-[24px] h-[24px] flex-shrink-0"
                     />
-                    <p className="text-[#171717] text-[22px] font-semibold tracking-[-0.88px] leading-[1.4]">
+                    <p className="text-[#012970] text-[22px] font-semibold tracking-[-0.88px] leading-[1.4]">
                       {svc.name}
                     </p>
                   </div>
@@ -94,7 +94,7 @@ export default function Services() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-[#171717]/60 text-[16px] font-semibold tracking-[-0.64px] leading-[1.3] w-[372px] pb-1">
+                    <p className="text-[#072447] text-[16px] font-semibold tracking-[-0.64px] leading-[1.3] w-[372px] pb-1">
                       {svc.desc}
                     </p>
                   </div>

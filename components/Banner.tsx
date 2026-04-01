@@ -22,7 +22,7 @@ export default function Banner() {
             </p>
           </div>
 
-          <button className="bg-[#2A29FF] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
+          <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
             <span className="text-white text-[18px] font-semibold tracking-[-0.72px] leading-none">Get started</span>
             <img src={imgGroup8} alt="" className="w-[52px] h-[52px]" />
           </button>
