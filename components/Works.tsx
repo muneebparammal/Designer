@@ -39,7 +39,7 @@ const projects = [
 
 export default function Works() {
   return (
-    <section className="w-full flex flex-col items-center py-16">
+    <section className="w-full flex flex-col items-center py-16" id="Works">
       <div className="flex flex-col items-center gap-6 text-center mb-12">
        <h2 className="text-[#012970] 
 text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] 

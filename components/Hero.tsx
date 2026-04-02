@@ -1,95 +1,94 @@
 'use client';
 
-const imgAvatar = "http://localhost:3845/assets/2b43cae28e933c836b2792d31030d21cf4780c59.png";
-const imgVector = "http://localhost:3845/assets/b4d7af0e11670a91f499168ef7f107b3d79843b0.svg";
-const imgIcon = "http://localhost:3845/assets/629876cae06a0472cd7b72d2888dbc78063744e9.svg";
-const imgGroup8 = "http://localhost:3845/assets/1fd35d35f7e7b2b210116cda334dabaae26a84fa.svg";
-const imgStars = "http://localhost:3845/assets/82730ecfd4e4c1301cbb06ba23f30f384b0fe40b.svg";
-const imgXdark = "http://localhost:3845/assets/dae35453e0d6ca9c09de98cee2889645d1ead818.svg";
-const imgIndark = "http://localhost:3845/assets/8b60bcfec63c3b0be1c70ca5436529b4cb7aad90.svg";
-const imgDrdark = "http://localhost:3845/assets/a8f065f2aa73dbd4ca5fcbbf819c1c98fce70cbe.svg";
-const imgEllipse = "http://localhost:3845/assets/3e4121aa84a20c848e78a8b93b3bb4b5c7df29d0.svg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full flex justify-center pt-0 pb-10">
-      <div className="relative w-full w-[550px]">
+    <section className="relative flex w-full justify-center pt-0 pb-10">
+      <div className="relative w-full max-w-[550px]">
         {/* Decorative stripe at top */}
-        <div className="flex flex-col items-center mb-[-36px]">
-          <div className="flex flex-col items-center z-20">
-            <div className="bg-[#012970] h-[50px] w-[53px] rounded-tl-[0px] rounded-tr-[0px]" />
-            <div className="bg-[#6C6C6C] h-[36px] rounded-[6px] w-[63px]" />
-            <div className="bg-gradient-to-b from-[#080808] to-[#2e2e2e] h-[26px] rounded-bl-[4px] rounded-br-[4px] w-[31px]" />
-            <div className="bg-white border border-[#eaeaea] h-[19px] w-[63px] rounded-[46px] mt-[-3px]" />
+        <div className="mb-[-36px] flex flex-col items-center">
+          <div className="z-20 flex flex-col items-center">
+            <div className="h-[50px] w-[53px] bg-[#012970]" />
+            <div className="h-[36px] w-[63px] rounded-[6px] bg-[#6C6C6C]" />
+            <div className="h-[26px] w-[31px] rounded-bl-[4px] rounded-br-[4px] bg-gradient-to-b from-[#080808] to-[#2e2e2e]" />
+            <div className="mt-[-3px] h-[19px] w-[63px] rounded-[46px] border border-[#eaeaea] bg-white" />
           </div>
         </div>
 
         {/* Outer gray card */}
-        <div className="bg-[#EEF2F8] border border-[#EAEAEA] rounded-[46px] pt-[50px] pb-[20px]  px-[9px] relative overflow-hidden">
+        <div className="relative overflow-hidden rounded-[46px] border border-[#EAEAEA] bg-[#EEF2F8] px-[9px] pt-[50px] pb-[20px]">
           {/* Inner white card */}
-         <div className="bg-white rounded-[24px] sm:rounded-[36px] shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] px-4 sm:px-6 md:px-8 lg:px-[50px] pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10 relative">
-            {/* Slots bar */}
-        
-
+          <div className="relative rounded-[24px] bg-white px-4 pt-6 pb-6 shadow-[0px_7px_26.5px_0px_rgba(0,0,0,0.03)] sm:rounded-[36px] sm:px-6 sm:pt-8 sm:pb-8 md:px-8 md:pt-10 md:pb-10 lg:px-[50px]">
             {/* Avatar row */}
-            <div className="flex items-start justify-between mb-8">
-              <div className="flex gap-[18px] items-center">
-                <div className="w-[60px] h-[60px] rounded-[100px] overflow-hidden flex-shrink-0">
-                  <img src="/profile.jpg" alt="Andrew Parker" className="w-full h-full object-cover" />
-               
+            <div className="mb-8 flex items-start justify-between">
+              <div className="flex items-center gap-[18px]">
+                <div className="h-[60px] w-[60px] flex-shrink-0 overflow-hidden rounded-[100px]">
+                  <img
+                    src="/profile.jpg"
+                    alt="Muneeb Parammal"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
+
                 <div className="flex flex-col gap-[12px]">
                   <div className="flex flex-col gap-[6px]">
-                    <p className="text-[#012970] text-[20px] font-semibold tracking-[-0.6px] leading-[20px]">Muneeb Parammal</p>
-                    <p className="text-[#072447] text-[14px] font-semibold tracking-[-0.42px] leading-[20px]">Sr. UI UX Designer / Product Designer</p>
+                    <p className="text-[20px] leading-[20px] font-semibold tracking-[-0.6px] text-[#012970]">
+                      Muneeb Parammal
+                    </p>
+                    <p className="text-[14px] leading-[20px] font-semibold tracking-[-0.42px] text-[#072447]">
+                      Sr. UI UX Designer / Product Designer
+                    </p>
                   </div>
-             
                 </div>
               </div>
-
-     
             </div>
 
             {/* Main headline */}
-            <h1 className="text-[#012970] 
-text-[32px] sm:text-[42px] md:text-[52px] lg:text-[60px] 
-font-bold 
-tracking-tight sm:tracking-[-0.02em] md:tracking-[-0.03em] lg:tracking-[-0.04em] 
-leading-[1.05] mb-8">
+            <h1 className="mb-8 text-[32px] leading-[1.05] font-bold tracking-tight text-[#012970] sm:text-[42px] sm:tracking-[-0.02em] md:text-[52px] md:tracking-[-0.03em] lg:text-[60px] lg:tracking-[-0.04em]">
               I’m Crafting Meaningful Digital Experiences.
             </h1>
 
-            {/* Rating badge + subtext */}
-            <div className="flex flex-col gap-[22px] mb-8">
-        
-              <p className="text-[#072447] text-[16px] font-semibold tracking-[-0.68px] leading-[1.4] max-w-[283px]">
-               I simplify complex problems into intuitive experiences across web and mobile.
+            {/* Subtext */}
+            <div className="mb-8 flex flex-col gap-[22px]">
+              <p className="max-w-[283px] text-[16px] leading-[1.4] font-semibold tracking-[-0.68px] text-[#072447]">
+                I simplify complex problems into intuitive experiences across web and mobile.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex gap-[8px] items-center mb-4">
-              <button className="bg-[#012970] flex items-center gap-[16px] h-[58px] pl-[28px] pr-[3px] py-[20px] rounded-[100px] hover:opacity-90 transition-opacity">
-                <span className="text-white text-[14px] lg:text-[16px] font-semibold tracking-[-0.68px]">Say Hello</span>
-                <img src="/arrow.svg" alt="" className="w-[52px] h-[52px]" />
-              </button>
-              <button className="bg-[#EEF2F8] h-[58px] px-[28px] py-[0px] rounded-[100px] hover:bg-[#EDEDED] transition-colors">
-                <span className="text-[#012970] text-[14px] lg:text-[16px] font-semibold tracking-[-0.68px]">My work</span>
-              </button>
+            <div className="mb-4 flex items-center gap-[8px]">
+              <a
+                href="mailto:muneebyfc@gmail.com?subject=Hello%20Muneeb&body=Hi%20Muneeb%2C%20I%20would%20like%20to%20connect."
+                className="flex h-[58px] items-center gap-[16px] rounded-[100px] bg-[#012970] py-[20px] pl-[28px] pr-[3px] transition-opacity hover:opacity-90"
+              >
+                <span className="text-[14px] font-semibold tracking-[-0.68px] text-white lg:text-[16px]">
+                  Say Hello
+                </span>
+                <img src="/arrow.svg" alt="" className="h-[52px] w-[52px]" />
+              </a>
+
+              <Link
+                href="#Works"
+                className="flex h-[58px] items-center rounded-[100px] bg-[#EEF2F8] px-[28px] transition-colors hover:bg-[#EDEDED]"
+              >
+                <span className="text-[14px] font-semibold tracking-[-0.68px] text-[#012970] lg:text-[16px]">
+                  My work
+                </span>
+              </Link>
             </div>
           </div>
 
-          {/* Location + Template link */}
-          <div className="flex flex-col items-center justify-between mt-4 px-[9px]">
+          {/* Location */}
+          <div className="mt-4 flex flex-col items-center justify-between px-[9px]">
             <div className="flex items-center gap-[5px]">
-              <img src="/map.svg" alt="" className="w-[13px] h-[13px]" />
-              <p className="text-[13px] font-semibold tracking-[-0.65px] leading-[1.2]">
+              <img src="/map.svg" alt="" className="h-[13px] w-[13px]" />
+              <p className="text-[13px] leading-[1.2] font-semibold tracking-[-0.65px]">
                 <span className="text-[rgba(23,23,23,0.6)]">Based in </span>
                 <span className="text-[#171717]">Dubai</span>
                 <span className="text-[rgba(23,23,23,0.6)]">, United Arab Emirates</span>
               </p>
             </div>
-
           </div>
         </div>
       </div>
