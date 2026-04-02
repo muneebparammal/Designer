@@ -57,7 +57,7 @@ export default function Footer() {
                 href="mailto:muneebyfc@gmail.com?subject=Hello%20Muneeb&body=Hi%20Muneeb%2C%20I%20would%20like%20to%20connect."
                 className="mt-2 flex h-[58px] items-center justify-center rounded-[100px] bg-[#012970] px-6 transition-opacity hover:opacity-90"
               >
-                <span className="text-[18px] leading-none font-semibold tracking-[-0.72px] text-white">
+                <span className="text-[18px]  leading-none font-semibold tracking-[-0.72px] text-white">
                   Let’s Chat
                 </span>
               </a>
@@ -67,7 +67,7 @@ export default function Footer() {
             <div className="flex w-full flex-col gap-[2px] text-center">
               <a
                 href="mailto:muneebyfc@gmail.com"
-                className="text-[24px] leading-none font-semibold tracking-[-2.25px] text-[#171717] hover:underline"
+                className="text-[18px] lg:text-[24px]  leading-none font-semibold tracking-[-1px] lg:tracking-[-2.25px] text-[#171717] hover:underline text-center"
               >
                 muneebyfc@gmail.com
               </a>
