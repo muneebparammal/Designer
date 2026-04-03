@@ -109,10 +109,10 @@ export default function Process() {
                   </div>
 
                   <div className="flex min-w-0 flex-1 flex-col gap-2">
-                    <p className="text-[20px] lg:text-[28px] font-semibold leading-[1] tracking-[-1px] text-[#171717]">
+                    <h4 className="text-[20px] lg:text-[28px] font-medium leading-[1] tracking-[-1px] text-[#171717]">
                       {step.title}
-                    </p>
-                    <p className="text-[15px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#171717]/60">
+                    </h4>
+                    <p className="text-[15px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#171717]/80">
                       {step.desc}
                     </p>
                   </div>
@@ -140,7 +140,7 @@ export default function Process() {
                     {titleLeft ? (
                       <>
                         <div className="flex justify-end">
-                          <p className="max-w-[160px] text-[22px] font-semibold leading-[1.3] tracking-[-0.88px] text-[#171717]">
+                          <p className="max-w-[160px] text-[22px] font-semibold leading-[1.3] tracking-[-0.88px] text-[#012970]">
                             {step.title}
                           </p>
                         </div>
@@ -148,7 +148,7 @@ export default function Process() {
                         <CenterTimeline step={step} active={i === 0} />
 
                         <div className="flex justify-start">
-                          <p className="max-w-[190px] text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#171717]/60">
+                          <p className="max-w-[190px] text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#171717]/80">
                             {step.desc}
                           </p>
                         </div>
@@ -156,7 +156,7 @@ export default function Process() {
                     ) : (
                       <>
                         <div className="flex justify-end">
-                          <p className="max-w-[190px] text-right text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#171717]/60">
+                          <p className="max-w-[190px] text-right text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#171717]/80">
                             {step.desc}
                           </p>
                         </div>
@@ -164,7 +164,7 @@ export default function Process() {
                         <CenterTimeline step={step} active={i === 0} />
 
                         <div className="flex justify-start">
-                          <p className="max-w-[160px] text-[22px] font-semibold leading-[1.3] tracking-[-0.88px] text-[#171717]">
+                          <p className="max-w-[160px] text-[22px] font-semibold leading-[1.3] tracking-[-0.88px] text-[#012970]">
                             {step.title}
                           </p>
                         </div>

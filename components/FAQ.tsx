@@ -7,24 +7,28 @@ const imgArrow = "./arrow-diaganol.svg";
 
 const faqs = [
   {
-    q: "What services do you offer?",
-    a: "I specialize in UX/UI design, web development, and branding for individuals and businesses.",
+    q: "What kind of projects do you usually work on?",
+    a: "I work on web and mobile products, including internal tools, enterprise platforms, and customer-facing applications — focusing on usability, scalability, and real-world use.",
   },
   {
-    q: "How long does it take to complete a project?",
-    a: "Project timelines vary depending on complexity. A standard website takes 2–4 weeks, while larger projects may take 6–8 weeks.",
+    q: "What is your role in a project?",
+    a: "I typically work end-to-end — from understanding requirements and defining flows to designing UI and supporting development with clear handoffs.",
   },
   {
-    q: "Can I request additional revisions?",
-    a: "Yes! I offer revision rounds as part of each package. Additional revisions can be arranged at an agreed rate.",
+    q: "Do you work with teams or independently?",
+    a: "Both. I’ve worked closely with product managers, developers, and stakeholders, and I’m also comfortable handling projects independently when needed.",
   },
   {
-    q: "What tools do you use for design?",
-    a: "I use Figma for design, Framer for no-code websites, and Adobe Photoshop for image editing.",
+    q: "How do you handle feedback and iterations?",
+    a: "Design is iterative. I work in cycles — sharing early, gathering feedback, and refining continuously to reach the best outcome.",
   },
   {
-    q: "Is coding required to manage the designs you create?",
-    a: "Not at all. I build sites with easy-to-use CMS systems so you can update content without any coding knowledge.",
+    q: "What tools and workflows do you use?",
+    a: "I mainly use Figma for design and prototyping, along with collaborative tools like FigJam and Miro. I also use AI tools to speed up exploration and iteration.",
+  },
+  {
+    q: "Do you work beyond UX and product design?",
+    a: "Yes, I also work on front-end development and visual design, including marketing assets, presentations, social media, motion, and video editing — helping maintain consistency across product and brand touchpoints.",
   },
 ];
 
@@ -33,7 +37,7 @@ export default function FAQ() {
 
   return (
     <section className="w-full flex justify-center py-10">
-      <div className="w-[550px] flex flex-col gap-8">
+      <div className="w-full w-[550px] flex flex-col gap-8">
         {/* Heading */}
         <h2 className="text-[#012970] 
 text-[36px] md:text-[44px] lg:text-[50px] 
@@ -56,7 +60,7 @@ leading-[1.1] text-center">
                 className="w-full flex items-center justify-between px-[32px] py-[29px] text-left"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <p className="text-[#171717] text-[16px] font-semibold tracking-[-0.64px] leading-[1.4]">
+                <p className="text-[#012970] text-[16px] font-semibold tracking-[-0.64px] leading-[1.4]">
                   {faq.q}
                 </p>
                 <img
@@ -67,7 +71,7 @@ leading-[1.1] text-center">
               </button>
               {open === i && (
                 <div className="px-[32px] pb-[29px]">
-                  <p className="text-[#171717] opacity-50 text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[350px]">
+                  <p className="w-full text-[#171717] opacity-80 text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[350px]">
                     {faq.a}
                   </p>
                 </div>

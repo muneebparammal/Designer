@@ -8,27 +8,31 @@ const AUTO_DURATION = 4500;
 const testimonials = [
   {
     quote:
-      "Muneeb delivered exceptional work—creative, detailed, and perfectly aligned with our vision. Highly recommend!",
-    name: "Stanley Black",
-    role: "Creative Director at Lumina",
+      "Working with you has always been a great experience. You consistently deliver high-quality work on time, stay responsive throughout the process, and ask exactly the right questions to get things done properly. What I appreciate most is that you’re genuinely reliable. Even when things get busy, I never have to worry about your part.",
+    name: "Madina Sadykova",
+    role: "UX/UI Design Manager at PresightAI",
+    bgImage: "/madina.png",
   },
   {
     quote:
       "Working with Muneeb was smooth from start to finish. The final design felt thoughtful, polished, and easy to use.",
     name: "Sarah Bennett",
     role: "Founder at Northlane",
+    bgImage: "/client1.jpg",
   },
   {
     quote:
       "He understood our brand quickly and translated it into a clean, modern digital experience that exceeded expectations.",
     name: "Daniel Reed",
     role: "Product Lead at Avero",
+    bgImage: "/client1.jpg",
   },
   {
     quote:
       "Great collaboration, clear communication, and a strong eye for detail throughout the project.",
     name: "Olivia Carter",
     role: "Marketing Manager at Solis",
+    bgImage: "/client1.jpg",
   },
 ];
 
@@ -71,65 +75,92 @@ export default function Testimonials() {
   const activeItem = testimonials[activeIndex];
 
   return (
-    <section className="w-full flex justify-center py-16 overflow-x-hidden">
-      <div className="w-full max-w-[550px] flex flex-col gap-10">
+    <section
+      id="testimonials"
+      className="flex w-full justify-center overflow-x-hidden py-16"
+    >
+      <div className="flex w-full max-w-[550px] flex-col gap-10">
         <div className="flex flex-col items-center gap-[30px] text-center">
-          <h2 className="text-[#171717] text-[36px] md:text-[50px] font-semibold tracking-[-1.8px] md:tracking-[-2.5px] leading-none">
-           From Clients & 
+          <h2 className="text-[36px] font-semibold leading-none tracking-[-1.8px] text-[#171717] md:text-[50px] md:tracking-[-2.5px]">
+            From Clients &
             <br />
             Collaborators
           </h2>
 
-          <div className="flex flex-col items-center gap-5 w-[179px]">
-            <div className="relative h-[46px] w-[138px] border border-[#E8E8E8] rounded-[50px] flex items-center pl-[3px] bg-white">
+          <div className="flex w-[179px] flex-col items-center gap-5">
+            <div className="relative flex h-[46px] w-[138px] items-center rounded-[50px] border border-[#E8E8E8] bg-white pl-[3px]">
               <div className="flex items-center">
                 {socialProofAvatars.map((img, i) => (
                   <div
                     key={i}
-                    className="w-[40px] h-[40px] rounded-full overflow-hidden -ml-[17px] first:ml-0 border-2 border-white"
+                    className="first:ml-0 h-[40px] w-[40px] overflow-hidden rounded-full border-2 border-white -ml-[17px]"
                     style={{ zIndex: 5 + i }}
                   >
                     <img
                       src={img}
                       alt={`Client ${i + 1}`}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                     />
                   </div>
                 ))}
 
-                <div className="z-20 w-[40px] h-[40px] -ml-[17px] rounded-full bg-[#012970] text-white text-[12px] font-semibold flex items-center justify-center border-2 border-white overflow-hidden">
+                <div className="z-20 -ml-[17px] flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-full border-2 border-white bg-[#012970] text-[12px] font-semibold text-white">
                   <img
                     src="/star.png"
                     alt="Star"
-                    className="w-full h-full object-cover"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </div>
             </div>
 
             <div className="text-[14px] font-semibold tracking-[-0.56px]">
-              <p className="text-[#171717] leading-[1.2]">Loved by those</p>
-              <p className="text-[#171717]/60 leading-[1.2]">
+              <p className="leading-[1.2] text-[#171717]">Loved by those</p>
+              <p className="leading-[1.2] text-[#171717]/60">
                 who value thoughtful design.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="relative w-full h-[860px] md:h-[900px] overflow-hidden">
-          <div className="absolute right-0 top-[90px] w-[220px] md:w-[360px] h-[640px] md:h-[720px] rounded-[32px] md:rounded-[46px] bg-gradient-to-l from-white to-[#F3F3F3]" />
-          <div className="absolute left-0 top-[90px] w-[220px] md:w-[360px] h-[640px] md:h-[720px] rounded-[32px] md:rounded-[46px] bg-gradient-to-r from-white to-[#F3F3F3]" />
+        <div className="relative h-[860px] w-full overflow-hidden md:h-[900px]">
+          <div className="absolute right-0 top-[90px] h-[640px] w-[220px] rounded-[32px] bg-gradient-to-l from-white to-[#F3F3F3] md:h-[720px] md:w-[360px] md:rounded-[46px]" />
+          <div className="absolute left-0 top-[90px] h-[640px] w-[220px] rounded-[32px] bg-gradient-to-r from-white to-[#F3F3F3] md:h-[720px] md:w-[360px] md:rounded-[46px]" />
 
           <img
             src="/hand.png"
             alt=""
-            className="absolute left-1/2 top-[80px] z-10 w-[110%] max-w-[530px] -translate-x-1/2 object-contain pointer-events-none"
+            className="pointer-events-none absolute left-1/2 top-[80px] z-10 w-[110%] max-w-[530px] -translate-x-1/2 object-contain"
           />
 
-          <div className="absolute left-1/2 top-[20px] z-20 w-[88vw] max-w-[435px] -translate-x-1/2 aspect-[435/860]">
-            <div className="absolute left-[4.1%] top-[2.1%] h-[95.8%] w-[91.7%] overflow-hidden rounded-[12%] bg-[#012970]">
+          <div className="absolute left-1/2 top-[20px] z-20 aspect-[435/860] w-[88vw] max-w-[435px] -translate-x-1/2">
+            <div className="absolute left-[4.1%] top-[2.1%] h-[95.8%] w-[91.7%] overflow-hidden rounded-[12%] bg-[#2a29ff]">
+              {/* Dynamic background image */}
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`bg-${activeIndex}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.45, ease: "easeOut" }}
+                  className="absolute inset-0"
+                >
+                  <img
+                    src={activeItem.bgImage}
+                    alt={activeItem.name}
+                    className="h-full w-full object-cover opacity-[0.22]"
+                  />
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Blue overlay */}
+              <div className="absolute inset-0 bg-[#012970]/50" />
+
+              {/* Light top glow */}
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0)_35%)]" />
-              <div className="absolute bottom-0 left-0 right-0 h-[220px] bg-gradient-to-b from-transparent to-[rgba(42,41,255,0.97)]" />
+
+              {/* Bottom fade */}
+              <div className="absolute bottom-0 left-0 right-0 h-[220px] bg-gradient-to-b from-transparent to-[rgba(1,41,112,0.97)]" />
 
               {/* Static top profile */}
               <div className="absolute left-[7%] right-[7%] top-[13%] z-10 flex flex-col gap-[12px]">
@@ -143,16 +174,15 @@ export default function Testimonials() {
                   </div>
 
                   <div className="flex flex-col gap-[2px]">
-                    <p className="text-[14px] md:text-[15px] font-semibold leading-none tracking-[-0.56px] text-white">
+                    <p className="text-[14px] font-semibold leading-none tracking-[-0.56px] text-white md:text-[15px]">
                       Muneeb Parammal
                     </p>
-                    <p className="text-[12px] md:text-[13px] font-semibold leading-none tracking-[-0.48px] text-white/60">
+                    <p className="text-[12px] font-semibold leading-none tracking-[-0.48px] text-white/60 md:text-[13px]">
                       UI/UX Designer
                     </p>
                   </div>
                 </div>
 
-                {/* Dynamic progress only */}
                 <div className="flex items-center gap-[10px]">
                   {testimonials.map((_, i) => (
                     <button
@@ -195,7 +225,7 @@ export default function Testimonials() {
                     className="flex flex-col gap-[30px] md:gap-[36px]"
                   >
                     <div className="flex flex-col gap-[18px] md:gap-[20px]">
-                      <div className="flex gap-[4px] text-white text-[14px] leading-none">
+                      <div className="flex gap-[4px] text-[14px] leading-none text-[#5ff8ff]">
                         <span>★</span>
                         <span>★</span>
                         <span>★</span>
@@ -203,7 +233,7 @@ export default function Testimonials() {
                         <span>★</span>
                       </div>
 
-                      <p className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold leading-[1.2] tracking-[-0.88px] text-white">
+                      <p className="text-[18px] font-semibold leading-[1.2] tracking-[-0.88px] text-white sm:text-[20px] md:text-[24px]">
                         {activeItem.quote}
                       </p>
                     </div>
@@ -245,7 +275,7 @@ export default function Testimonials() {
             <img
               src="/phone-frame.png"
               alt="Phone mockup"
-              className="absolute inset-0 z-30 h-full w-full object-contain pointer-events-none"
+              className="pointer-events-none absolute inset-0 z-30 h-full w-full object-contain"
             />
           </div>
         </div>

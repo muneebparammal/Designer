@@ -2,37 +2,42 @@
 
 import { useState } from "react";
 
-const imgFrame0 = "/icon1.svg";
-const imgFrame1 = "/icon2.svg";
-const imgFrame2 = "/icon3.svg";
-const imgFrame3 = "/icon4.svg";
-const imgFrame4 = "/icon5.svg";
-
+const imgFrame0 = "/product.svg";
+const imgFrame1 = "/ux.svg";
+const imgFrame2 = "/interaction.svg";
+const imgFrame3 = "/research.svg";
+const imgFrame4 = "/visual.svg";
+const imgFrame5 = "/dev.svg";
 const services = [
   {
-    name: "Web Design",
+    name: "End-to-End Product Design",
     icon: imgFrame0,
-    desc: "Designing clean, modern websites that are easy to use and visually engaging.",
+    desc: "I work across the full product lifecycle — from early ideas to final delivery. I also define and scale design systems to ensure consistency across products and teams.",
   },
   {
-    name: "Web Development",
+    name: "User Experience Design",
     icon: imgFrame1,
-    desc: "Crafting visually appealing, user-friendly designs that reflect your brand. From wireframes to final prototypes, every detail is considered.",
+    desc: "I design clear and intuitive user journeys by simplifying complex workflows. Every decision is guided by usability, structure, and real user behavior.",
   },
   {
-    name: "Brand Identity",
+    name: "Interaction Design",
     icon: imgFrame2,
-    desc: "Building strong visual identities that help brands feel clear, consistent, and memorable.",
+    desc: "I focus on how things behave — transitions, states, and feedback — making interactions feel natural, responsive, and easy to understand.",
   },
   {
-    name: "UX/UI Design",
+    name: "Research & Validation",
     icon: imgFrame3,
-    desc: "Creating intuitive digital experiences through thoughtful user flows, wireframes, and polished interfaces.",
+    desc: "I use research and testing to understand user behavior and validate decisions, helping reduce assumptions and improve outcomes.",
   },
   {
-    name: "Consultation Services",
+    name: "Visual & Brand Design",
     icon: imgFrame4,
-    desc: "Helping teams improve digital products with practical design direction and UX thinking.",
+    desc: "I create supporting visuals across digital touchpoints — from UI elements to marketing assets — maintaining consistency in design language and brand expression.",
+  },
+  {
+    name: "Front-End Implementation",
+    icon: imgFrame5,
+    desc: "I translate design into responsive front-end interfaces and work with reusable components aligned with design systems for consistency and scalability.",
   },
 ];
 
@@ -44,7 +49,7 @@ export default function Services() {
   };
 
   return (
-    <section className="w-full flex justify-center py-10">
+    <section id="Services" className="w-full flex justify-center py-10">
       <div className="w-[550px] flex flex-col gap-10">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="text-[#012970] 
@@ -52,10 +57,10 @@ text-[36px] md:text-[44px] lg:text-[50px]
 font-semibold 
 tracking-[-0.8px] sm:tracking-[-1.4px] md:tracking-[-2px] lg:tracking-[-2.5px] 
 leading-[1.1]">
-            My services
+           How I Work
           </h2>
           <p className="text-[#072447] text-[17px] font-semibold tracking-[-0.68px] leading-[1.4] w-[220px]">
-            Here&apos;s how I can help bring your vision to life:
+           Turning ideas into intuitive, scalable digital products.
           </p>
         </div>
 
@@ -78,9 +83,9 @@ leading-[1.1]">
                       alt={svc.name}
                       className="w-[24px] h-[24px] flex-shrink-0"
                     />
-                    <p className="text-[#012970] text-[22px] font-semibold tracking-[-0.88px] leading-[1.4]">
+                    <h4 className="text-[#012970] text-[20px] lg:text-[22px] font-medium tracking-[-0.88px] leading-[1.4]">
                       {svc.name}
-                    </p>
+                    </h4>
                   </div>
 
                   <span
@@ -98,7 +103,7 @@ leading-[1.1]">
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-[#072447] text-[16px] font-semibold tracking-[-0.64px] leading-[1.3] w-[372px] pb-1">
+                    <p className="text-[#072447]/80 text-[16px] font-semibold tracking-[-0.64px] leading-[1.3] w-[372px] pb-1">
                       {svc.desc}
                     </p>
                   </div>

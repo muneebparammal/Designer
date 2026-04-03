@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 
+
 export default function Hero() {
   return (
-    <section className="relative flex w-full justify-center pt-0 pb-10">
+    <section id="Hero" className="relative flex w-full justify-center pt-0 pb-10">
       <div className="relative w-full max-w-[550px]">
         {/* Decorative stripe at top */}
         <div className="mb-[-36px] flex flex-col items-center">
@@ -36,7 +37,7 @@ export default function Hero() {
                     <p className="text-[20px] leading-[20px] font-semibold tracking-[-0.6px] text-[#012970]">
                       Muneeb Parammal
                     </p>
-                    <p className="text-[14px] leading-[20px] font-semibold tracking-[-0.42px] text-[#072447]">
+                    <p className="text-[14px] leading-[20px] font-semibold tracking-[-0.42px] text-[#072447]/80">
                       Sr. UI UX Designer / Product Designer
                     </p>
                   </div>
@@ -51,7 +52,7 @@ export default function Hero() {
 
             {/* Subtext */}
             <div className="mb-8 flex flex-col gap-[22px]">
-              <p className="max-w-[283px] text-[16px] leading-[1.4] font-semibold tracking-[-0.68px] text-[#072447]">
+              <p className="max-w-[283px] text-[16px] leading-[1.4] font-semibold tracking-[-0.68px] text-[#072447]/80">
                 I simplify complex problems into intuitive experiences across web and mobile.
               </p>
             </div>

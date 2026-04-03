@@ -13,11 +13,12 @@ import Banner from '@/components/Banner';
 import Journal from '@/components/Journal';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
+import StickyBottomMenu from '@/components/StickyBottomMenu';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-[550px] mx-auto px-4">
+      <div className="mx-auto max-w-[550px] px-4">
         <Hero />
         <LogoBar />
         <Works />
@@ -26,7 +27,7 @@ export default function Home() {
         {/* <Tools /> */}
         {/* <Timeline /> */}
         <Advantages />
-        {/* <Testimonials /> */}
+        <Testimonials />
         {/* <Pricing /> */}
         <FAQ />
         {/* <Banner /> */}
@@ -34,6 +35,8 @@ export default function Home() {
         {/* <Newsletter /> */}
         <Footer />
       </div>
+
+      <StickyBottomMenu />
     </main>
   );
 }

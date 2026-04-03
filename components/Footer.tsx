@@ -5,8 +5,8 @@ const imgGroup26 = "./dribble.svg";
 
 export default function Footer() {
   return (
-    <footer className="flex w-full justify-center pt-10 pb-8">
-      <div className="flex w-full max-w-[550px] flex-col gap-[10px] px-4 md:px-0">
+    <footer id="Contact" className="flex w-full justify-center pt-10 pb-8">
+      <div className="flex w-full max-w-[550px] flex-col gap-[10px]  md:px-0">
         {/* Designer profile */}
         <div className="mb-[60px] flex flex-col items-center gap-5">
           {/* Avatar */}

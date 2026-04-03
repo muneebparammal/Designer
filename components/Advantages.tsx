@@ -7,7 +7,7 @@ const imgFrame = "/frame.svg";
 export default function Advantages() {
   return (
     <section className="w-full py-10">
-      <div className="w-full max-w-[550px] flex flex-col gap-[10px] px-4 md:px-0">
+      <div className="w-full max-w-[550px] flex flex-col gap-[10px]  md:px-0">
         {/* Top stat */}
         {/* <div className="flex min-h-[140px] items-center rounded-[24px] border border-[#E9E9E9] bg-white px-5 py-6 md:h-[183px] md:rounded-[36px] md:px-[50px]">
           <div className="flex items-center gap-4 md:gap-[22px]">
@@ -41,22 +41,27 @@ export default function Advantages() {
               ))}
             </div>
 
-            <div className="relative z-10 flex flex-col gap-[14px]">
-              <div className="flex items-end gap-0">
-                <span className="text-[52px] font-semibold leading-none tracking-[-2.8px] text-white md:text-[65px] md:tracking-[-3.9px]">
-                  12
-                </span>
-                <span className="mb-1 text-[18px] font-semibold leading-none tracking-[-1px] text-white md:mb-2 md:text-[23px] md:tracking-[-1.38px]">
-                  +
-                </span>
-              </div>
+          <div className="relative z-10 flex flex-row items-center justify-between gap-[14px] md:flex-col md:items-start">
+  
+  {/* Number */}
+  <div className="flex items-end gap-0">
+    <span className="text-[52px] font-semibold leading-none tracking-[-2.8px] text-white md:text-[65px] md:tracking-[-3.9px]">
+      12
+    </span>
+    <span className="mb-1 text-[18px] font-semibold leading-none tracking-[-1px] text-white md:mb-2 md:text-[23px] md:tracking-[-1.38px]">
+      +
+    </span>
+  </div>
 
-              <div className="max-w-[180px] text-[13px] font-semibold leading-[1.2] tracking-[-0.4px] md:text-[14px] md:tracking-[-0.56px]">
-                <p className="text-[rgba(255,255,255,0.6)]">Years of experience</p>
-                <p className="text-white">Designing and delivering 
-digital products</p>
-              </div>
-            </div>
+  {/* Description */}
+  <div className="max-w-[180px] text-[13px] font-semibold leading-[1.2] tracking-[-0.4px] md:text-[14px] md:tracking-[-0.56px] text-right md:text-left">
+    <p className="text-[rgba(255,255,255,0.6)]">Years of experience</p>
+    <p className="text-white">
+      Designing and delivering digital products
+    </p>
+  </div>
+
+</div>
 
             {/* Icon button */}
             {/* <div className="absolute bottom-6 left-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[rgba(0,0,0,0.39)] backdrop-blur-[8px] md:bottom-[40px] md:left-[40px]">
