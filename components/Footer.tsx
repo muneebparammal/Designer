@@ -28,11 +28,19 @@ export default function Footer() {
           </div>
 
           {/* Social links */}
-          <div className="flex items-center gap-[6px]">
-            <img src={imgGroup24} alt="LinkedIn" className="h-[34px] w-[34px]" />
-            <img src={imgGroup25} alt="Behance" className="h-[34px] w-[34px]" />
-            <img src={imgGroup26} alt="Dribbble" className="h-[34px] w-[34px]" />
-          </div>
+       <div className="flex items-center gap-[6px]">
+  <a href="www.linkedin.com/in/muneeb-parammal-88736961" target="_blank" rel="noopener noreferrer">
+    <img src={imgGroup24} alt="LinkedIn" className="h-[34px] w-[34px]" />
+  </a>
+
+  <a href="https://www.behance.net/muneebsha" target="_blank" rel="noopener noreferrer">
+    <img src={imgGroup25} alt="Behance" className="h-[34px] w-[34px]" />
+  </a>
+
+  <a href="https://dribbble.com/muneebparammal" target="_blank" rel="noopener noreferrer">
+    <img src={imgGroup26} alt="Dribbble" className="h-[34px] w-[34px]" />
+  </a>
+</div>
         </div>
 
         {/* Contact card */}
