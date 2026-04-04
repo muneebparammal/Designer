@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Andrew Parker — Web Designer & Developer",
-  description: "I create websites that work as hard as you do. UX/UI design, web development, and branding for individuals and businesses.",
+  title: "Muneeb Parammal — UI UX Designer & Product Designer",
+  description: "   I’m Crafting Meaningful Digital Experiences.",
 };
 
 export default function RootLayout({

@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const AUTO_DURATION = 4500;
+const AUTO_DURATION = 10000;
 
 const testimonials = [
   {
@@ -18,15 +18,15 @@ const testimonials = [
       "Muneeb played an important role in strengthening our brand and supporting marketing and lead generation at Stryx Sports. He is dependable, responsive, and someone you can always count on. He’s always on top of his work and easy to depend on.",
     name: "Mohamed Elbatouti",
     role: "Chief Commercial Officer at Stryxsports",
-    bgImage: "/client1.jpg",
+    bgImage: "/batouti.png",
   },
-  // {
-  //   quote:
-  //     "He understood our brand quickly and translated it into a clean, modern digital experience that exceeded expectations.",
-  //   name: "Daniel Reed",
-  //   role: "Product Lead at Avero",
-  //   bgImage: "/client1.jpg",
-  // },
+  {
+    quote:
+      "Working with Muneeb on the website project was seamless. He was highly supportive in structuring, planning, and effortlessly executing the entire process, making collaboration easy and efficient throughout.",
+    name: "Devika Mathavan",
+    role: "Marketing & Brand Manager at 2b Limitless",
+    bgImage: "/devika.png",
+  },
   // {
   //   quote:
   //     "Great collaboration, clear communication, and a strong eye for detail throughout the project.",
