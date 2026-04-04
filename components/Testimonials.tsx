@@ -15,25 +15,25 @@ const testimonials = [
   },
   {
     quote:
-      "Working with Muneeb was smooth from start to finish. The final design felt thoughtful, polished, and easy to use.",
-    name: "Sarah Bennett",
-    role: "Founder at Northlane",
+      "Muneeb played an important role in strengthening our brand and supporting marketing and lead generation at Stryx Sports. He is dependable, responsive, and someone you can always count on. He’s always on top of his work and easy to depend on.",
+    name: "Mohamed Elbatouti",
+    role: "Chief Commercial Officer at Stryxsports",
     bgImage: "/client1.jpg",
   },
-  {
-    quote:
-      "He understood our brand quickly and translated it into a clean, modern digital experience that exceeded expectations.",
-    name: "Daniel Reed",
-    role: "Product Lead at Avero",
-    bgImage: "/client1.jpg",
-  },
-  {
-    quote:
-      "Great collaboration, clear communication, and a strong eye for detail throughout the project.",
-    name: "Olivia Carter",
-    role: "Marketing Manager at Solis",
-    bgImage: "/client1.jpg",
-  },
+  // {
+  //   quote:
+  //     "He understood our brand quickly and translated it into a clean, modern digital experience that exceeded expectations.",
+  //   name: "Daniel Reed",
+  //   role: "Product Lead at Avero",
+  //   bgImage: "/client1.jpg",
+  // },
+  // {
+  //   quote:
+  //     "Great collaboration, clear communication, and a strong eye for detail throughout the project.",
+  //   name: "Olivia Carter",
+  //   role: "Marketing Manager at Solis",
+  //   bgImage: "/client1.jpg",
+  // },
 ];
 
 const socialProofAvatars = [
@@ -76,7 +76,7 @@ export default function Testimonials() {
 
   return (
     <section
-      id="testimonials"
+      id="Testimonials"
       className="flex w-full justify-center overflow-x-hidden py-16"
     >
       <div className="flex w-full max-w-[550px] flex-col gap-10">
