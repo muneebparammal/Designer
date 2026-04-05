@@ -1,8 +1,8 @@
 {
   "$schema": "https://design-system.schema.org/v1",
-  "name": "Praxis Design System",
+  "name": "Muneeb Design System",
   "version": "1.0.0",
-  "description": "Design tokens for the Praxis portfolio template by Andrew Parker",
+  "description": "Design tokens for the Muneeb portfolio",
 
   "colors": {
     "primary": "#2A29FF",

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Muneeb Parammal — UI UX Designer & Product Designer",
-  description: "   I’m Crafting Meaningful Digital Experiences.",
+  title: "Muneeb Parammal | UI UX Designer & Product Designer in UAE",
+  description:
+    "UI/UX Designer with 13+ years experience creating digital products, design systems, and user-centered experiences for web and mobile.",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
