@@ -31,8 +31,8 @@ export default function Works() {
                 />
               </div>
 
-              <div className="relative mx-[6px] mt-[-40px] flex min-h-[70px] items-center gap-[14px] rounded-[41px] bg-white px-[8px] py-2 shadow-[0px_9px_13px_0px_rgba(0,0,0,0.14)]">
-                <div className="flex h-[54px] w-[54px] flex-shrink-0 items-center justify-center overflow-hidden rounded-[50px] bg-[#F6F6F6]">
+              <div className="relative mx-[0px] mt-[-40px] flex min-h-[90px] items-center gap-[14px] rounded-[16px] px-[8px] pl-[24px] py-2 bg-[#EEF2F8]">
+                {/* <div className="flex h-[54px] w-[54px] flex-shrink-0 items-center justify-center overflow-hidden rounded-[50px] bg-[#F6F6F6]">
                   {project.logoType === "icon" ? (
                     <img src={imgFrameIcon} className="h-[32px] w-[32px]" alt="" />
                   ) : (
@@ -42,10 +42,10 @@ export default function Works() {
                       className="h-full w-full object-contain p-1"
                     />
                   )}
-                </div>
+                </div> */}
 
                 <div className="flex flex-1 flex-col gap-px">
-                  <p className="text-[16px] font-semibold tracking-[-0.64px] text-[#171717]">
+                  <p className="text-[16px] font-semibold tracking-[-0.64px] text-[#012970]">
                     {project.name}
                   </p>
                   <p className="hidden sm:block text-[13px] font-semibold text-[#171717] opacity-80">

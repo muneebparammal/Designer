@@ -12,7 +12,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     image: "/casestudy/sinyar-cover.png",
-    name: "Emiratisation Learning App (SINYAR)",
+    name: "Emiratisation Training App",
     desc: "Gamified mobile learning on Microsoft Power Apps",
     logo: "/product.svg",
     href: "/work/sinyar",

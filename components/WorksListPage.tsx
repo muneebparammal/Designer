@@ -22,14 +22,14 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
       </div>
 
       {/* floating bottom pill */}
-      <div className="relative mx-[6px] -mt-[40px] flex min-h-[70px] items-center gap-[14px] rounded-[41px] bg-white px-[8px] py-2 shadow-[0px_9px_13px_0px_rgba(0,0,0,0.14)]">
-        <div className="flex h-[54px] w-[54px] shrink-0 items-center justify-center overflow-hidden rounded-[50px] bg-[#F6F6F6]">
+      <div className="relative mx-[0px] mt-[-40px] flex min-h-[90px] items-center gap-[14px] rounded-[16px] px-[8px] pl-[24px] py-2 bg-[#EEF2F8]">
+        {/* <div className="flex h-[54px] w-[54px] shrink-0 items-center justify-center overflow-hidden rounded-[50px] bg-[#F6F6F6]">
           <img
             src={project.logo}
             alt=""
             className="h-full w-full object-contain p-1"
           />
-        </div>
+        </div> */}
 
         <div className="flex min-w-0 flex-1 flex-col gap-px">
           <p className="truncate text-[16px] font-semibold tracking-[-0.64px] text-[#012970]">

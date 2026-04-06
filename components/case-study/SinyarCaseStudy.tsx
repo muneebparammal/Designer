@@ -324,7 +324,7 @@ export default function SinyarCaseStudy() {
         {/* Intro block — NARROW  title → tagline → Project overview → body (Figma gap-[30px]) */}
         <Narrow className="flex flex-col gap-[30px]">
           <h1 className="text-[40px] font-semibold leading-none tracking-[-2px] text-[#012970] sm:text-[44px] md:text-[50px] md:tracking-[-2.5px]">
-            Emiratisation Learning App
+            Emiratisation Training App
           </h1>
           <p className="text-[16px] font-semibold leading-[1.4] tracking-[-0.72px] text-[#072447]/80 sm:text-[17px] md:text-[18px]">
             Designing a gamified mobile experience on a low-code platform (Power Apps)
