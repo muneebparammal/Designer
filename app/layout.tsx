@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Muneeb Parammal | UI UX Designer & Product Designer in UAE",
   description:
     "UI/UX Designer with 13+ years experience creating digital products, design systems, and user-centered experiences for web and mobile.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,12 +22,25 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-             <link
+        <link
           href="https://fonts.cdnfonts.com/css/satoshi"
           rel="stylesheet"
         />
       </head>
-      <body className="font-[Manrope,sans-serif] antialiased">{children}</body>
+
+      <body className="font-[Manrope,sans-serif] antialiased">
+        
+        {/* Microsoft Clarity */}
+        <Script id="clarity" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "rf62fqd02d");`}
+        </Script>
+
+        {children}
+      </body>
     </html>
   );
 }

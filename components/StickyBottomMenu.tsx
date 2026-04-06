@@ -3,9 +3,9 @@
 const imgHome = "/home.svg";
 
 const navItems = [
-  { label: "Work", href: "#Works" },
-  { label: "About me", href: "#Services" },
-  { label: "Testimonials", href: "#Testimonials" },
+  { label: "Work", href: "/#Works" },
+  { label: "About me", href: "/#Services" },
+  { label: "Testimonials", href: "/#Testimonials" },
 ];
 
 export default function StickyBottomMenu() {
@@ -14,7 +14,7 @@ export default function StickyBottomMenu() {
       <div className="flex items-center justify-between rounded-full bg-[#2F2F2F] p-1.5 shadow-lg">
         {/* Home */}
         <a
-          href="#Hero"
+          href="/#Hero"
           className="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full text-white transition-opacity hover:opacity-80 sm:h-[56px] sm:w-[56px]"
           aria-label="Home"
         >
@@ -36,7 +36,7 @@ export default function StickyBottomMenu() {
 
         {/* Contact */}
         <a
-          href="#Contact"
+          href="/#Contact"
           className="shrink-0 rounded-full bg-white px-3 py-2 text-[11px] font-semibold text-black transition-opacity hover:opacity-90 sm:px-6 sm:py-3 sm:text-[16px]"
         >
           Contact

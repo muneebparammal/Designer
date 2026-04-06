@@ -1,11 +1,11 @@
-const imgAvatar = "./profile.jpg";
-const imgGroup24 = "./linkedin.svg";
-const imgGroup25 = "./behance.svg";
-const imgGroup26 = "./dribble.svg";
+const imgAvatar = "/profile.jpg";
+const imgGroup24 = "/linkedin.svg";
+const imgGroup25 = "/behance.svg";
+const imgGroup26 = "/dribble.svg";
 
 export default function Footer() {
   return (
-    <footer id="Contact" className="flex w-full justify-center pt-10 pb-8">
+    <footer id="Contact" className="flex w-full justify-center pt-10 pb-8 mb-[60px]">
       <div className="flex w-full max-w-[550px] flex-col gap-[10px]  md:px-0">
         {/* Designer profile */}
         <div className="mb-[60px] flex flex-col items-center gap-5">
