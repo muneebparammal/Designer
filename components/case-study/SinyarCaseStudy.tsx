@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import StickyBottomMenu from "@/components/StickyBottomMenu";
@@ -133,10 +134,10 @@ function GalleryPair({ left, right }: { left: string; right: string }) {
 function LaptopImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div
-      className="relative w-full overflow-hidden rounded-[28px] sm:rounded-[36px]"
+      className="relative w-full overflow-hidden rounded-[28px] sm:rounded-[36px] mt-8"
       style={{ aspectRatio: "1012/690" }}
     >
-      <CaseStudyImage src={src} alt={alt} className="absolute inset-0 size-full object-cover" />
+      <CaseStudyImage src={src} alt={alt} className="absolute inset-0 " />
     </div>
   );
 }
@@ -399,7 +400,8 @@ export default function SinyarCaseStudy() {
 
         {/* laptop 1 — WIDE */}
         <Wide>
-          <LaptopImage src={sinyarAssets.laptop1} alt="SINYAR dashboard on laptop" />
+           <SectionTitle>Customer Journey Map</SectionTitle>
+          <LaptopImage src={sinyarAssets.laptop1} alt="Customer Journey Map" />
         </Wide>
 
         {/* solution title — NARROW */}
@@ -411,55 +413,47 @@ export default function SinyarCaseStudy() {
           <SectionTitle>Solution</SectionTitle>
   
           <SolutionRow
-            title="Candidate Dashboard"
-            imageSrc={sinyarAssets.gallery1}
-            imageAlt="Candidate dashboard screens"
+            title="Candidate Features"
+            imageSrc={sinyarAssets.sinyar8}
+            imageAlt="Candidate Features"
           >
             <ul>
-              <li>Clean, structured dashboard within Power Apps layout system</li>
-              <li>Real-time progress and task visibility</li>
-              <li>Simple navigation optimized for platform limitations</li>
+              <li>Task tracking with deadlines </li>
+              <li>Engagement through gamified challenges</li>
+              <li>AI chatbot for guidance</li>
+              <li>Easy access to support</li>
             </ul>
           </SolutionRow>
           <SolutionRow
             reverse
-            title="Task & Approval Flow"
-            imageSrc={sinyarAssets.gallery2}
-            imageAlt="Task and approval flow"
+            title="Admin Features"
+            imageSrc={sinyarAssets.sinyar9}
+            imageAlt="Admin Features"
           >
             <ul>
-              <li>Clear task ownership and status for candidates and managers</li>
-              <li>Approval steps mapped to native Power Apps patterns</li>
-              <li>Fewer handoffs through in-context actions</li>
+              <li>Program and task setup </li>
+              <li>Approval workflows </li>
+              <li>Timeline management</li>
+              <li>Overall progress tracking </li>
             </ul>
           </SolutionRow>
           <SolutionRow
-            title="Gamification"
-            imageSrc={sinyarAssets.gallery1}
-            imageAlt="Gamification UI"
+            title="Manager Features "
+            imageSrc={sinyarAssets.sinyar10}
+            imageAlt="Manager Features "
           >
             <ul>
-              <li>Leaderboards and scorecards within platform constraints</li>
-              <li>Daily challenges designed with lightweight interactions</li>
+              <li>Real-time visibility into candidate progress </li>
+              <li>Monitoring performance across modules  </li>
+              <li>Task approvals </li>
             </ul>
           </SolutionRow>
-          <SolutionRow
-            reverse
-            title="Learning Journey"
-            imageSrc={sinyarAssets.gallery2}
-            imageAlt="Learning journey modules"
-          >
-            <ul>
-              <li>Module-based structure using repeatable components</li>
-              <li>Step-by-step task progression</li>
-              <li>Smart reminders using system notifications</li>
-            </ul>
-          </SolutionRow>
+         
         </Wide>
 
-        {/* key decisions — NARROW */}
+              {/* approach — NARROW */}
         <Narrow className="space-y-5">
-          <SectionTitle>Key design decisions</SectionTitle>
+          <SectionTitle>Key Design Decisions</SectionTitle>
           <Body>
             <ul>
               <li>Designed within Power Apps constraints, avoiding over-complex UI</li>
@@ -471,17 +465,31 @@ export default function SinyarCaseStudy() {
           </Body>
         </Narrow>
 
+
         {/* outcome — NARROW */}
         <Narrow className="space-y-5">
           <SectionTitle>Outcome</SectionTitle>
           <Body>
             <p>
-              The final product is a practical, scalable, and user-friendly mobile application,
-              successfully delivered within a low-code environment while maintaining strong UX
-              principles.
+             The final product is a practical, scalable, and user-friendly mobile application, successfully delivered within a low-code environment while maintaining strong UX principles.
             </p>
           </Body>
         </Narrow>
+
+         {/* approach — NARROW */}
+        <Narrow className="space-y-5">
+          <SectionTitle>Business Impact</SectionTitle>
+          <Body>
+            <ul>
+              <li>Improved candidate engagement</li>
+              <li>Enhanced transparency across stakeholders  </li>
+              <li>Real-time performance tracking</li>
+              <li>Streamlined onboarding workflows</li>
+              <li>Better sentiment tracking through feedback</li>
+            </ul>
+          </Body>
+        </Narrow>
+
 
         {/* challenges — NARROW, same component style as Process.tsx */}
         <Narrow>
@@ -599,13 +607,28 @@ export default function SinyarCaseStudy() {
 
           </div>
         </Narrow>
+         {/* gallery 2 + laptop 2 — WIDE */}
+         <Wide className="space-y-2.5">
+         
+         <LaptopImage src={sinyarAssets.sinyar11} alt="SINYAR on laptop — angled view" />
+       </Wide>
 
-        {/* gallery 2 + laptop 2 — WIDE */}
+
+        {/* video — NARROW */}
         <Wide className="space-y-2.5">
-          <GalleryPair left={sinyarAssets.gallery1} right={sinyarAssets.gallery2} />
-          <LaptopImage src={sinyarAssets.laptop2} alt="SINYAR on laptop — angled view" />
+          <div className="relative w-full overflow-hidden rounded-[28px] sm:rounded-[36px]" style={{ paddingTop: "56.25%" }}>
+            <iframe
+              src="https://player.vimeo.com/video/1181466934?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              title="training_video"
+            />
+          </div>
         </Wide>
 
+       
      
       </article>
 
@@ -614,6 +637,7 @@ export default function SinyarCaseStudy() {
       </div>
 
       <StickyBottomMenu />
+      <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
     </main>
   );
 }
