@@ -24,7 +24,8 @@ export const projects: Project[] = [
     desc: "Community management mobile app",
     logo: "works/sobha-sm.svg",
     logoType: "icon",
-    href: "https://www.behance.net/gallery/199242965/Sobha-Realty-Community-Management-App",
+    href: "/work/sobha",
+    internal: true,
   },
   {
     image: "works/almersad.png",
