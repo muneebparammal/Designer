@@ -4,24 +4,28 @@ export const sobhaAssets = {
   hero: "/casestudy/sobha/sobha-cover.png",
 
   /** Section 4 — full-width mockup image (after Scope Expansion) */
-  mockupWide: "/casestudy/sobha/mockup-wide.png",
+  mockupWide: "/casestudy/sobha/my-role.png",
 
   /** Section 6 — Competitor Analysis table (kept as single image) */
   competitorAnalysis: "/casestudy/sobha/competitor-analysis.png",
 
   /** Section 7 — User Persona cards (kept as single image) */
-  userPersona: "/casestudy/sobha/user-persona.png",
+  userPersona: "/casestudy/sobha/user_persona.png",
+  personaOne: "/casestudy/sobha/persona-1.png",
+  personaTwo: "/casestudy/sobha/persona-2.png",
+  personaThree: "/casestudy/sobha/persona-3.png",
 
-  /**
-   * Section 8 — Customer Journey Map: 3 rows of 2 images each.
-   * Export each cell from Figma using these filenames.
-   */
-  journeyMap1L: "/casestudy/sobha/journey-map-1l.png",
-  journeyMap1R: "/casestudy/sobha/journey-map-1r.png",
-  journeyMap2L: "/casestudy/sobha/journey-map-2l.png",
-  journeyMap2R: "/casestudy/sobha/journey-map-2r.png",
-  journeyMap3L: "/casestudy/sobha/journey-map-3l.png",
-  journeyMap3R: "/casestudy/sobha/journey-map-3r.png",
+
+    /** Section 7 — Empathy mapcards (kept as single image) */
+    empathyOne: "/casestudy/sobha/empathy-1.png",
+    empathyTwo: "/casestudy/sobha/empathy-2.png",
+    empathyThree: "/casestudy/sobha/empathy-3.png",
+  
+  /** Section 8 — Customer Journey Map: one image per flow */
+  journeyMapAmenity:       "/casestudy/sobha/amenity_booking_journey.png",
+  journeyMapServiceRequest:"/casestudy/sobha/service_request__journey.png",
+  journeyMapMoveIn:        "/casestudy/sobha/movein__journey.png",
+  journeyMapAccessControl: "/casestudy/sobha/access_control_journey.png",
 
   /**
    * Section 9 — UI Screens: one image per sub-section row of phone mockups.

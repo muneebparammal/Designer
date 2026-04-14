@@ -107,11 +107,12 @@ function ImagePair({ left, right }: { left: string; right: string }) {
 
 function FullWidthImage({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="overflow-hidden rounded-[24px] sm:rounded-[28px]">
+    <div className="overflow-hidden">
       <CaseStudyImage src={src} alt={alt} className="w-full h-auto" />
     </div>
   );
 }
+
 
 /* ─── UIScreenBlock ─────────────────────────────────────────────────────────── */
 function UIScreenBlock({
@@ -122,13 +123,13 @@ function UIScreenBlock({
 }) {
   return (
     <div className="flex flex-col gap-5">
-      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#012970]/50">{label}</p>
-      <div className="overflow-hidden rounded-[20px] sm:rounded-[24px]">
+      <p className="text-[24px] font-bold text-[#012970]">{label}</p>
+      <div className="overflow-hidden">
         <CaseStudyImage src={imageSrc} alt={imageAlt} className="w-full h-auto" />
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="space-y-3">
-          <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#012970]/60">Features</p>
+          <p className="text-[16px] font-bold  text-[#012970]">Features</p>
           <ul className="space-y-2">
             {features.map((f) => (
               <li key={f} className="flex items-start gap-2 text-[14px] font-semibold leading-[1.5] tracking-[-0.03em] text-[#072447]/80 sm:text-[15px]">
@@ -138,11 +139,11 @@ function UIScreenBlock({
           </ul>
         </div>
         <div className="space-y-3">
-          <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#012970]/60">Highlights</p>
+          <p className="text-[16px] font-bold  text-[#012970]">Highlights</p>
           <ul className="space-y-2">
             {highlights.map((h) => (
               <li key={h} className="flex items-start gap-2 text-[14px] font-semibold leading-[1.5] tracking-[-0.03em] text-[#072447]/80 sm:text-[15px]">
-                <span className="mt-[5px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#3075CA]/60" />{h}
+                <span className="mt-[5px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#012970]/40" />{h}
               </li>
             ))}
           </ul>
@@ -156,17 +157,17 @@ function UIScreenBlock({
 
 const scopeItems = [
   {
-    icon: "🏠",
+    icon: "/digitization.svg",
     title: "Complete Digitalization",
     body: "Implementing entirely new digital flows for Move-In/Out processes, eliminating paperwork and creating seamless digital experiences.",
   },
   {
-    icon: "⚡",
+    icon: "/utility.svg",
     title: "Utility and Control",
     body: "Integrating high-value, complex features like Home Automation controls and comprehensive Visitor Management systems.",
   },
   {
-    icon: "🔄",
+    icon: "/selfservice.svg",
     title: "Self-Service Adoption",
     body: "Creating efficient flows for routine tasks: Amenity Booking, Service Requests, Account Renewal, Visitor Management, and Access Cards.",
   },
@@ -174,24 +175,24 @@ const scopeItems = [
 
 const myRoleItems = [
   {
-    icon: "/research.svg",
+    icon: "/casestudy/sobha/strategy.svg",
     title: "Strategy & Requirements",
-    desc: "Defined project scope and requirements through stakeholder workshops, aligning business goals with resident needs to set a clear design direction.",
+    desc: "I collaborated closely with all cross-functional teams and stakeholders (including Operations and Engineering) to define project scope and requirements. I led design workshops to align business needs with core user objectives early in the process.",
   },
   {
-    icon: "/product.svg",
+    icon: "/casestudy/sobha/foundation.svg",
     title: "Strategy & Foundation",
     desc: "I established the project's direction through research. I conducted competitor analysis and benchmarking against best-in-class utility apps to define essential features and design standards.",
   },
   {
-    icon: "/ux.svg",
+    icon: "/casestudy/sobha/blueprint.svg",
     title: "UX Structure & Blueprint",
-    desc: "Mapped information architecture, user flows, and wireframes — structuring the platform to support multiple user roles and complex workflows intuitively.",
+    desc: "I created all the low-fidelity wireframes to define the product's new, efficient Information Architecture (IA). This structure was the foundation for consolidating over a dozen separate services into a coherent user flow.",
   },
   {
-    icon: "/visual.svg",
+    icon: "/casestudy/sobha/design.svg",
     title: "Design Execution & Quality",
-    desc: "Delivered high-fidelity UI screens, a comprehensive design system, and developer-ready handoffs — ensuring consistency and quality across every module.",
+    desc: "DI established the foundational design system to ensure visual consistency, quality, and scalability across the entire platform. I assigned work and mentored other designers responsible for creating the high-fidelity mockups, ensuring all final designs met usability standards .",
   },
 ] as const;
 
@@ -289,11 +290,11 @@ export default function SobhaCaseStudy() {
             </div>
             <div className="mt-5 flex items-center justify-center">
               <a
-                href="https://www.behance.net/gallery/199242965/Sobha-Realty-Community-Management-App"
+                href="https://apps.apple.com/ae/app/one-sobha-app/id6453471270"
                 target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-[6px] text-[13px] font-semibold tracking-[-0.04em] text-[#012970]/70 transition-opacity hover:opacity-80"
               >
-                View on Behance
+                View on Live App
                 <img src="/arrow-diaganol.svg" alt="" className="h-[10px] w-[10px]" />
               </a>
             </div>
@@ -331,9 +332,17 @@ export default function SobhaCaseStudy() {
           <SectionTitle>The Problem</SectionTitle>
           <Body>
             <p className="mb-4 font-bold text-[#012970]">A Disconnected Post-Purchase Experience</p>
-
-            <p className="mb-4 font-semibold text-[#072447]/70 italic">
-              Initial State — The original application was only focused on marketing and pre-sales.
+            <ul className="mb-4">
+              <li>UX research and stakeholder alignment</li>
+              <li>Journey mapping and workflow structuring</li>
+              <li>Designing within Power Apps UI and interaction limitations</li>
+              <li>Creating scalable UI patterns aligned with platform components</li>
+              <li>Wireframes, UI design, and prototypes</li>
+              <li>Close collaboration with developers for feasibility</li>
+            </ul>
+            <p className="mb-3 font-bold text-[#012970]">Initial State</p>
+            <p className="mb-4 text-[14px] font-semibold leading-[1.6] text-[#072447]/80 sm:text-[15px]">
+              The original application was only focused on marketing and pre-sales.
               It was great for listing properties or submitting an inquiry. Crucially, it provided
               zero utility to residents after they completed a purchase and moved in.
             </p>
@@ -402,8 +411,8 @@ export default function SobhaCaseStudy() {
                 transition={{ delay: i * 0.07 }}
                 className="rounded-[22px] bg-white px-5 py-5 md:rounded-[34px]"
               >
-                <div className="flex items-start gap-4">
-                  <span className="text-[22px] leading-none">{item.icon}</span>
+                <div className="flex items-center gap-4">
+                  <img src={item.icon} alt="" className="w-[60px] h-[60px] flex-shrink-0" />
                   <div className="flex flex-col gap-1.5">
                     <p className="text-[16px] font-bold leading-[1.2] tracking-[-0.5px] text-[#012970] sm:text-[17px]">
                       {item.title}
@@ -447,7 +456,7 @@ export default function SobhaCaseStudy() {
                   >
                     <div className="flex items-center gap-[16px]">
                       <img src={item.icon} alt={item.title} className="w-[24px] h-[24px] flex-shrink-0" />
-                      <h4 className="text-[#012970] text-[18px] sm:text-[20px] font-medium tracking-[-0.72px] leading-[1.4]">
+                      <h4 className="text-[#012970] text-[18px] sm:text-[22px] font-medium tracking-[-0.72px] leading-[1.4]">
                         {item.title}
                       </h4>
                     </div>
@@ -479,25 +488,95 @@ export default function SobhaCaseStudy() {
         </Narrow>
 
         {/* ── 6. COMPETITOR ANALYSIS — WIDE — kept as image ── */}
-        <Wide className="space-y-5">
+        <Wide className="space-y-4">
           <SectionTitle>Competitor Analysis</SectionTitle>
-          <FullWidthImage src={sobhaAssets.competitorAnalysis} alt="Competitor Analysis — Sobha vs Emaar vs DAMAC" />
+          <div className="bg-[#EEF2F8] rounded-[32px] p-4">
+            <FullWidthImage src={sobhaAssets.competitorAnalysis}  alt="Competitor Analysis — Sobha vs Emaar vs DAMAC" />
+          </div>
         </Wide>
 
         {/* ── 7. USER PERSONA — WIDE — kept as image ── */}
-        <Wide className="space-y-5">
+        <Wide className="space-y-4">
           <SectionTitle>User Persona</SectionTitle>
-          <FullWidthImage src={sobhaAssets.userPersona} alt="User Persona for One Sobha App" />
+          <div className="bg-[#EEF2F8] rounded-[32px] p-4">
+          <div className="flex flex-col gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+                <CaseStudyImage src={sobhaAssets.personaOne} alt="user persona" className="w-full h-auto" />
+              </div>
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+                <CaseStudyImage src={sobhaAssets.personaTwo} alt="user persona" className="w-full h-auto" />
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+              <CaseStudyImage src={sobhaAssets.personaThree} alt="user persona" className="w-full h-auto" />
+            </div>
+          </div>
+          </div>
+         
         </Wide>
 
-        {/* ── 8. CUSTOMER JOURNEY MAP — WIDE — 3 rows × 2 images ── */}
-        <Wide className="space-y-5">
-          <SectionTitle>Customer Journey Map</SectionTitle>
-          <div className="flex flex-col gap-3">
-            <ImagePair left={sobhaAssets.journeyMap1L} right={sobhaAssets.journeyMap1R} />
-            <ImagePair left={sobhaAssets.journeyMap2L} right={sobhaAssets.journeyMap2R} />
-            <ImagePair left={sobhaAssets.journeyMap3L} right={sobhaAssets.journeyMap3R} />
+        {/* ── 7. Empathy map — WIDE — kept as image ── */}
+        <Wide className="space-y-4">
+          <SectionTitle>Empathy Map</SectionTitle>
+          <div className="bg-[#EEF2F8] rounded-[32px] p-4">
+          <div className="flex flex-col gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+                <CaseStudyImage src={sobhaAssets.empathyOne} alt="Empathy map" className="w-full h-auto" />
+              </div>
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+                <CaseStudyImage src={sobhaAssets.empathyTwo} alt="Empathy map" className="w-full h-auto" />
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
+              <CaseStudyImage src={sobhaAssets.empathyThree} alt="Empathy map" className="w-full h-auto" />
+            </div>
           </div>
+          </div>
+         
+        </Wide>
+
+        {/* ── 8. CUSTOMER JOURNEY MAP — WIDE — 4 flows ── */}
+        <Wide className="space-y-8">
+          <SectionTitle>Customer Journey Map</SectionTitle>
+
+          {[
+            {
+              subtitle: "Amenity Booking Journey",
+              description: "How can residents easily book amenities in a few steps?",
+              src: sobhaAssets.journeyMapAmenity,
+              alt: "Amenity Booking Journey Map",
+            },
+            {
+              subtitle: "Service Request Journey",
+              description: "How can residents report and track service issues without confusion?",
+              src: sobhaAssets.journeyMapServiceRequest,
+              alt: "Service Request Journey Map",
+            },
+            {
+              subtitle: "Move-In Journey",
+              description: "How can new residents complete the entire move-in process digitally?",
+              src: sobhaAssets.journeyMapMoveIn,
+              alt: "Move-In Journey Map",
+            },
+            {
+              subtitle: "Access Control Journey",
+              description: "How can residents manage vehicle and community access from one place?",
+              src: sobhaAssets.journeyMapAccessControl,
+              alt: "Access Control Journey Map",
+            },
+          ].map(({ subtitle, description, src, alt }) => (
+            <div key={subtitle} className="space-y-3">
+              <p className="text-[18px] font-bold leading-snug tracking-[-0.03em] text-[#012970] sm:text-[20px]">
+                {subtitle}
+              </p>
+              <p className="text-[14px] font-semibold leading-[1.6] tracking-[-0.02em] text-[#072447]/60 sm:text-[15px]">
+                {description}
+              </p>
+              <FullWidthImage src={src} alt={alt} />
+            </div>
+          ))}
         </Wide>
 
         {/* ── 9. UI SCREENS — WIDE — 4 separate cards ── */}
@@ -536,16 +615,16 @@ export default function SobhaCaseStudy() {
             </div>
 
             {/* Additional Features — text LEFT, images RIGHT */}
-            <div className="overflow-hidden rounded-[28px] bg-[#EEF2F8] p-5 sm:rounded-[36px] sm:p-8">
+            <div className="overflow-hidden rounded-[28px] bg-[#EEF2F8] sm:rounded-[36px]">
               <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-10">
-                <div className="flex flex-col gap-4 lg:w-[340px] lg:shrink-0">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#012970]/50">Additional Features</p>
+                <div className="flex flex-col gap-4 lg:w-[340px] lg:shrink-0 p-8">
+                  <p className="text-[24px] font-bold text-[#012970]">Additional Features</p>
                   <p className="text-[15px] font-semibold leading-[1.6] tracking-[-0.03em] text-[#072447]/80 sm:text-[16px]">
                     The platform includes several additional modules that contribute to a
                     comprehensive community management experience.
                   </p>
                 </div>
-                <div className="min-w-0 flex-1 overflow-hidden rounded-[20px] sm:rounded-[24px]">
+                <div className="min-w-0 flex-1 overflow-hidden">
                   <CaseStudyImage src={sobhaAssets.uiScreensAdditional} alt="Additional Features app screens" className="w-full h-auto" />
                 </div>
               </div>
@@ -649,21 +728,21 @@ export default function SobhaCaseStudy() {
                       {challengeLeft ? (
                         <>
                           <div className="flex justify-end">
-                            <p className="max-w-[200px] text-right text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#012970]">{c.title}</p>
+                            <p className="w-100 text-right text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#012970]">{c.title}</p>
                           </div>
                           <CenterTimeline n={c.n} active={i === 0} />
                           <div className="flex justify-start">
-                            <p className="max-w-[200px] text-[15px] font-semibold leading-[1.4] tracking-[-0.5px] text-[#171717]/80">{c.outcome}</p>
+                            <p className="w-100 text-[15px] font-semibold leading-[1.4] tracking-[-0.5px] text-[#171717]/80">{c.outcome}</p>
                           </div>
                         </>
                       ) : (
                         <>
                           <div className="flex justify-end">
-                            <p className="max-w-[200px] text-right text-[15px] font-semibold leading-[1.4] tracking-[-0.5px] text-[#171717]/80">{c.outcome}</p>
+                            <p className="w-100 text-right text-[15px] font-semibold leading-[1.4] tracking-[-0.5px] text-[#171717]/80">{c.outcome}</p>
                           </div>
                           <CenterTimeline n={c.n} active={i === 0} />
                           <div className="flex justify-start">
-                            <p className="max-w-[200px] text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#012970]">{c.title}</p>
+                            <p className="w-100 text-[16px] font-semibold leading-[1.3] tracking-[-0.64px] text-[#012970]">{c.title}</p>
                           </div>
                         </>
                       )}
@@ -681,14 +760,14 @@ export default function SobhaCaseStudy() {
           <SectionTitle>Design System</SectionTitle>
           <div className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div className="overflow-hidden rounded-[24px] sm:rounded-[28px]">
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
                 <CaseStudyImage src={sobhaAssets.designSystemColors} alt="Design System — Colour Palette" className="w-full h-auto" />
               </div>
-              <div className="overflow-hidden rounded-[24px] sm:rounded-[28px]">
+              <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
                 <CaseStudyImage src={sobhaAssets.designSystemTypography} alt="Design System — Typography" className="w-full h-auto" />
               </div>
             </div>
-            <div className="overflow-hidden rounded-[24px] sm:rounded-[28px]">
+            <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
               <CaseStudyImage src={sobhaAssets.designSystemComponents} alt="Design System — Components & Icons" className="w-full h-auto" />
             </div>
           </div>
