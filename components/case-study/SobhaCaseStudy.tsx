@@ -124,7 +124,7 @@ function UIScreenBlock({
   return (
     <div className="flex flex-col gap-5">
       <p className="text-[24px] font-bold text-[#012970]">{label}</p>
-      <div className="overflow-hidden rounded-[20px] sm:rounded-[24px]">
+      <div className="overflow-hidden">
         <CaseStudyImage src={imageSrc} alt={imageAlt} className="w-full h-auto" />
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -475,7 +475,7 @@ export default function SobhaCaseStudy() {
                       isOpen ? "grid-rows-[1fr] opacity-100 mt-4" : "grid-rows-[0fr] opacity-0 mt-0"
                     }`}
                   >
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden ">
                       <p className="text-[#072447]/80 text-[15px] sm:text-[16px] font-semibold tracking-[-0.64px] leading-[1.5] pb-1">
                         {item.desc}
                       </p>
@@ -491,7 +491,9 @@ export default function SobhaCaseStudy() {
         <Wide className="space-y-4">
           <SectionTitle>Competitor Analysis</SectionTitle>
           <div className="bg-[#EEF2F8] rounded-[32px] p-4">
+          <div className="overflow-hidden rounded-[12px] sm:rounded-[16px]">
             <FullWidthImage src={sobhaAssets.competitorAnalysis}  alt="Competitor Analysis — Sobha vs Emaar vs DAMAC" />
+            </div>
           </div>
         </Wide>
 
