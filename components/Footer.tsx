@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Social links */}
        <div className="flex items-center gap-[6px]">
-  <a href="www.linkedin.com/in/muneeb-parammal-88736961" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/muneeb-parammal-88736961" target="_blank" rel="noopener noreferrer">
     <img src={imgGroup24} alt="LinkedIn" className="h-[34px] w-[34px]" />
   </a>
 
