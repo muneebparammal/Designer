@@ -279,16 +279,17 @@ export default function SinyarCaseStudy() {
               <MetaRow
                 icon={
                   <div className="flex size-full items-center justify-center rounded-[50px] bg-[#0b1f41]">
-                    <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-white">AF</span>
+                    <img src="/works/alfuttaim-white.svg" alt="Sinyar App" className="size-[32px] object-contain" />
                   </div>
                 }
                 label="Client"
                 value="Al-Futtaim Group"
               />
+
               <MetaRow
                 icon={
                   <div className="flex size-full items-center justify-center rounded-[50px] bg-[#f6f6f6]">
-                    <img src="/visual.svg" alt="" className="size-[20px] opacity-80 sm:size-[22px]" />
+                    <img src="/category.svg" alt="" className="size-[20px] opacity-80 sm:size-[22px]" />
                   </div>
                 }
                 label="Category"
@@ -297,7 +298,7 @@ export default function SinyarCaseStudy() {
               <MetaRow
                 icon={
                   <div className="flex size-full items-center justify-center rounded-[50px] bg-[#f6f6f6]">
-                    <img src="/Interaction.svg" alt="" className="size-[20px] opacity-80 sm:size-[22px]" />
+                    <img src="/role.svg" alt="" className="size-[20px] opacity-80 sm:size-[22px]" />
                   </div>
                 }
                 label="Role"
