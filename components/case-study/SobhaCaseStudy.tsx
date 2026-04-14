@@ -124,7 +124,7 @@ function UIScreenBlock({
   return (
     <div className="flex flex-col gap-5">
       <p className="text-[24px] font-bold text-[#012970]">{label}</p>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-[20px] sm:rounded-[24px]">
         <CaseStudyImage src={imageSrc} alt={imageAlt} className="w-full h-auto" />
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
